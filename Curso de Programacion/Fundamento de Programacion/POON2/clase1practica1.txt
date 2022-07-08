@@ -1,0 +1,20 @@
+Campeonato de futboll
+Colecciones de objetos que forman parte de un campeonato de futbol:
+-Estadio
+--Estacionamiento
+---Autos
+---Autobuses
+--Gradas
+--Vestidores
+--Baños
+--Luces
+--Puestos de comida
+--Cancha
+---Arqueria
+---Medio campo
+---Banca
+--Arbitro
+-Equipos
+--Jugadores
+---Ropa
+-Camaras
