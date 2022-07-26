@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+
+html {
+    color: white;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+body {
+    margin: 0px;
+}
+
+#cabezera{
+    background-color: rgb(97, 126, 207);
+    padding: 15px;
+}
+
+#logo {
+    float: left 1px;
+    display: inline-block;
+    padding: 0px;
+}
+
+#titulo {
+    float: left;
+    padding: 0px;
+    display: inline-block;
+}
+
+#lista {
+    font-family: 'Orbitron', sans-serif;
+}
+
+.container {
+    width: 32%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 30%;
+    padding: 7px;
+    background-color: rgb(97, 126, 207);
+}
+
+.SubTitulo {
+    background-color: rgb(190, 38, 102);
+    padding: 5px
+}
