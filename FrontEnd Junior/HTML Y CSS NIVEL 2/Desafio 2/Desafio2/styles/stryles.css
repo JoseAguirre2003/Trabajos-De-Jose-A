@@ -1,0 +1,183 @@
+html {
+    font-family: 'Segoe UI';
+    color: #555555;
+}
+
+body {
+    /* margin-top: 0px;
+    margin-right: 40px;
+    margin-left: 40px; */
+    margin-bottom: 1000px;
+}
+
+p {
+    margin: 0px;
+}
+
+header {
+    margin-bottom: 70px;
+}
+
+#logo {
+    margin: 15px 0px 5px 10px;
+    float: left;
+}
+
+#ulHeader {
+    display: inline-block;
+    margin: 15px 0px;
+    padding-left: 5px;
+}
+
+.liUlHeader {
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+#VisualStudio {
+    color: rgb(34, 34, 34);
+    border-left: solid 2px black;
+    padding-left: 25px;
+    font-size: 18px;
+}
+
+#ulHeader2 {
+    float: right;
+    margin: 17px 0px;
+    padding-left: 25px;
+}
+
+#SignIn {
+    float: right;
+    margin-top: -10px;
+    margin-left: 10px;
+    margin-right: 14px;
+}
+
+#lupa {
+    position: relative;
+    top: 4px;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+h1 {
+    color: black;
+    font-size: 57px;
+    margin-left: 25px;
+}
+
+#cuadroMorado {
+    border: solid 5px rgb(234, 231, 245);
+    border-radius: 20px;
+    background-color: rgb(211, 205, 235);
+    color: black;
+}
+
+#VSLogoImg {
+    height: 70px;
+    display: block;
+    margin: 10px;
+}
+
+/*Boton como tal*/
+
+#botonComentarios {
+    height: 31px;
+    margin: 0px;
+    background-color: rgb(16, 110, 190);
+    padding: 3px 6px;
+    color: white;
+    transform: rotate(-90deg);
+    position: fixed;
+    right: -40px;
+}
+
+/* Texto: */
+
+#comentarios{
+    display: inline-block;
+    margin: 0px;
+}
+
+/*Lapiz*/
+
+#lapiz {
+    height: 20px;
+    margin: 0px;
+    display: inline-block;
+    top: 3px;
+}
+
+#caract1Sec {
+    margin: 10px;
+    width: 20%;
+    margin-left: 15px;
+    display: inline-block;
+}
+
+#WindowLogo {
+    display: inline;
+    position: relative;
+    top: -14px;
+    margin: 0px -14px;
+}
+
+#Version {
+    display: inline;
+    position: relative;
+    top: -25px;
+    border-left: solid 1px black;
+    padding-left: 8px;
+
+}
+
+#caract2Sec{
+    display: inline;
+}
+
+.caract2 {
+    margin: 0px;
+    width: 20%;
+    display: inline-block;
+    position: relative;
+}
+
+#comunidad {
+    top: -76px;
+}
+
+#professional {
+    top: -119px;
+}
+
+#enterprise {
+    top: -98px;
+}
+
+.botonGratis {
+    background-color: rgb(59, 46, 88);
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    width: 100px;
+    border-radius: 2px;
+}
+
+#BotonGratisProfes {
+    position: relative;
+    top: 43px;
+}
+
+#BotonGratisEnter {
+    position: relative;
+    top: 22px;
+}
+
+#caract3sec {
+    margin: 0px;
+    width: 20%;
+    display: inline-block;
+    position: relative;
+}

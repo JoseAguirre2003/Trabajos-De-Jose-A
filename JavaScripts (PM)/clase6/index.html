@@ -1,0 +1,320 @@
+<script>
+
+    console.log("Objetos");
+
+    console.log("");
+    console.log("Objeto: miGato");
+    console.log("");
+
+    var miGato = {
+        Nombre: "Milo",
+        Edad: 8,
+        Color: "Blanco con negro",
+        Peso: 5 + "kg"
+    };
+
+    console.log("Nombre: " + miGato.Nombre);
+    console.log("Edad: " + miGato.Edad);
+    console.log("Color: " + miGato.Color);
+    console.log("Peso: " + miGato.Peso);
+
+    console.log("");
+    console.log("Objeto: miCuaderno");
+    console.log("");
+
+    var miCuaderno = {
+        "Color": "Rojo",
+        "Categoria": 3,
+        "Numero de Paginas": 200,
+        "Numero de Hojas": 100
+    };
+
+    console.log("Color: " + miCuaderno.Color);
+    console.log("Categoria: " + miCuaderno.Categoria);
+    console.log("Numero de paginas: " + miCuaderno["Numero de Paginas"]);
+    console.log("Numero de Hojas: " + miCuaderno["Numero de Hojas"]);
+
+    console.log("");
+    console.log("Objeto: resultados");
+    console.log("");
+
+    var resultados = {
+        1: "KavuDare",
+        2: "SkyDevs",
+        3: "Roctiv27",
+        4: "Ram"
+    };
+
+    var posicion = 4;
+
+    console.log(resultados[posicion]);
+
+    console.log("");
+    console.log("Actualizando Objeto: Bolso");
+    console.log("");
+
+    var bolso = {
+        "Color" : "Azul",
+        "Tamano" : "Mediano",
+        "Contenido": ["Botella de Agua", "Cuaderno"]
+    };
+
+    console.log(bolso.Color);
+
+    bolso.Color = "Verde";
+
+    console.log(bolso.Color);
+
+    console.log("Contenido antiguo: " + bolso.Contenido);
+
+    bolso.Contenido.push(" Lapiz");
+
+    console.log("Contenido nuevo: " + bolso.Contenido);
+
+    bolso["Contenido"].push("Tijeras")
+
+    console.log("Contenido nuevo otra vez: " + bolso.Contenido);
+
+    console.log("");
+    console.log("Agregando Propiedades a Objeto: curso");
+    console.log("");
+
+    var curso = {
+        "Titulo": "Aprende JavaScript",
+        "Idioma": "Espanol",
+        "Duracion": 30 + " minutos"
+    };
+
+    curso.visitas = 232123;
+
+    console.log(curso.visitas);
+
+    console.log("");
+    console.log("Eliminando Propiedades a Objeto: curso");
+    console.log("");
+
+    console.log(curso.Duracion);
+
+    delete curso["Duracion"];
+
+    console.log(curso.Duracion);
+
+    console.log(curso);
+
+    console.log("");
+    console.log("Objetos para Mostrar: Usuarios del Server");
+    console.log("");
+
+    function MostrarUsuarios(codeUser) {
+        var usuarios = {
+            "9540": "DarkSky",
+            "8347": "Eleiber",
+            "1009": "KavuDare",
+            "7942": "Roticv22",
+            "5127": "Gojira-sama",
+            "7620": "Nicole U",
+            "7577": "RODRI69",
+            "6181": "havic26",
+            "9716": "AlecSF"
+        }
+        return usuarios[codeUser]
+    }
+
+    console.log(MostrarUsuarios(9540))
+    console.log(MostrarUsuarios(8347))
+    console.log(MostrarUsuarios(1009))
+    console.log(MostrarUsuarios(7942))
+    console.log(MostrarUsuarios(5127))
+    console.log(MostrarUsuarios(7620))
+    console.log(MostrarUsuarios(7577))
+    console.log(MostrarUsuarios(6181))
+    console.log(MostrarUsuarios(9716))
+
+    console.log("")
+    console.log("Verficando si un usuario existe")
+    console.log("")
+
+    var usuarios = {
+        9540: "DarkSky",
+        8347: "Eleiber",
+        1009: "KavuDare",
+        7942: "Roticv22",
+        5127: "Gojira-sama",
+        7620: "Nicole U",
+        7577: "RODRI69",
+        6181: "havic26",
+        9716: "AlecSF"
+    }
+
+    function verificarPropiedad(obj, propiedad) {
+    if (obj.hasOwnProperty(propiedad)) {
+        return "Si existe " + obj[propiedad];
+    } else {
+        return "No existe";
+    }
+    }
+
+    console.log(verificarPropiedad(usuarios, 1009));
+
+//-----------------------------------------------//
+
+    console.log("");
+    console.log("Objeto: Autos");
+    console.log("");
+
+    var Autos = [
+        {
+            "marca": "Ford",
+            "tipo": "Deportivo",
+            "modelo": "Mustang GT", 
+            "prestaciones": [
+                "Motor V8",
+                "Turbo",
+            ],
+            "Maletero": false
+        },
+        {
+            "marca": "Chevrolet",
+            "tipo": "Sedan",
+            "modelo": "Optra", 
+            "prestaciones": [
+                "Motor V4",
+                "Caja de mala calidad",
+            ],
+            "Maletero": true
+        },
+        {
+            "marca": "Jeep",
+            "tipo": "Off Road",
+            "modelo": "Grand Cherockee", 
+            "prestaciones": [
+                "Motor V8",
+                "4x4",
+            ],
+            "Maletero": true
+        }
+    ];
+
+    console.log("Auto 1:");
+    console.log("");
+
+    function MostratInfoAuto(obj, numAuto) {
+        console.log("Marca: " + obj[numAuto].marca);
+        console.log("Tipo: " + obj[numAuto].tipo);
+        console.log("modelo: " + obj[numAuto].modelo);
+        console.log("prestaciones: " + obj[numAuto].prestaciones);
+        if (obj[numAuto].Maletero == true) {
+            console.log("Tiene maletero");
+        } else {
+            console.log("No tiene maletero");
+        }
+    }
+
+    console.log("Auto 1:");
+    console.log("");
+    MostratInfoAuto(Autos, 0);
+    console.log("");
+    console.log("Auto 2:");
+    console.log("");
+    MostratInfoAuto(Autos, 1);
+    console.log("");
+    console.log("Auto 3:");
+    console.log("");
+    MostratInfoAuto(Autos, 2);
+
+    //---------------------------------------------------//
+
+    console.log("");
+    console.log("Objeto: Edificio");
+    console.log("");
+
+    var Edificio = {
+    "Cantidad de Pisos": 5,
+    "Cantidad de Apartamentos": 50,
+        "Apartamento": {
+            "Cocina": true,
+            "Banio": true,
+            "Habitacion": {
+                "Muebles": true
+            }
+        }
+    }
+
+    console.log("Cantidad de aprtamentos: " + Edificio["Cantidad de Apartamentos"]);
+    console.log("Las Habitaciones tienen muebles? " + Edificio.Apartamento.Habitacion.Muebles);
+
+    //-----------------------------------------------//
+
+    console.log("")
+
+    var misPlantas = [
+    {
+        tipo: "Flores",
+        lista: [
+            "Rosas",
+            "Tulipanes",
+            "Dientes de leon"
+        ]
+    },
+    {
+        tipos: "Arboles",
+        lista: [
+            "Abeto",
+            "Pino",
+            "Abedul"
+        ]
+    }
+    ]
+
+    var primeraFlor = misPlantas[0].lista[0];
+
+    console.log(primeraFlor);
+
+    var segundoArbol = misPlantas[1].lista[2];
+
+    console.log(segundoArbol);
+
+    console.log("");
+
+
+    //----------------------------------------------------//
+
+    console.log("Coleccion de discos")
+    console.log("")
+
+    var coleccionDeDiscos = {
+        7853: {
+            tituloAlbum: "Nevermind",
+            artista: "Nirvana",
+            year: "1991",
+            canciones: ["Smell like teen spirit", "Come As You Are", "Lithium"]
+        },
+        5439: {
+            tituloAlbum: "Gorillaz",
+        }
+    }
+
+    function actualizarDisco(discos, id, propiedad, valor) {
+        if (valor === "") {
+            delete discos[id][propiedad];
+        } else if (propiedad === "canciones") {
+            discos[id][propiedad] = discos[id][propiedad] || [];
+            discos[id][propiedad].push(valor);
+        } else {
+            discos[id][propiedad] = valor;
+        }
+    }
+
+    console.log(coleccionDeDiscos[5439].tituloAlbum);
+    console.log(coleccionDeDiscos[5439].canciones);
+
+    actualizarDisco(coleccionDeDiscos, 5439, "canciones", "19-2003");
+
+    console.log(coleccionDeDiscos[5439].tituloAlbum);
+    console.log(coleccionDeDiscos[5439].canciones);
+
+    //Verga en este mi me j0d1er0n
+
+    //----------------------------------------------//
+
+</script>

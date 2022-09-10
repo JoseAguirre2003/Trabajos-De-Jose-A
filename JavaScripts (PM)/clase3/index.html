@@ -1,0 +1,158 @@
+<script>
+
+    //[]
+
+    console.log("Arreglo");
+
+    var miArreglo = ["Jose", "Aguirre", 19, 7, 5, 2003, 1.73];
+
+    console.log(miArreglo);
+
+    console.log("Arreglos anidados");
+
+    var ArregloAnidado = [["Jose", "Aguirre", 19, 7, 5, 2003, 1.73],["Mario", "Perez", 22, 4, 5, 2001, 1.92],["Carlos", "Aguilar", 20, 8, 3, 1999, 1.78]];
+
+    console.log(ArregloAnidado);
+
+    console.log("Otro Arreglo");
+
+    var OtroArreglo = [10, 20, 30];
+
+    console.log(OtroArreglo[0]);
+
+    console.log("");
+    console.log("Suma del 'OtroArreglo'");
+
+    var Suma = OtroArreglo[0] + OtroArreglo[1] + OtroArreglo[2];
+
+    console.log(Suma);
+
+    console.log("");
+    console.log("Actualizando el valor del arreglo");
+
+    OtroArreglo[0] = 40;
+
+    Suma = OtroArreglo[0] + OtroArreglo[1] + OtroArreglo[2];
+
+    console.log(Suma);
+
+    //-----------------------------------------------------//
+
+    console.log('voy a tratar de acceder al "ArregloAnidado"');
+
+    console.log("Nombre: " + ArregloAnidado[0][0]);
+    console.log("Apellido: " + ArregloAnidado[0][1]);
+    console.log("Edad " + ArregloAnidado[0][2]);
+    console.log("Fecha de nacimineto: " + ArregloAnidado[0][3] + "/" + ArregloAnidado[0][4] + "/" + ArregloAnidado[0][5]);
+    console.log("Altura: " + ArregloAnidado[0][6]);
+
+    console.log("");
+
+    console.log("Nombre: " + ArregloAnidado[1][0]);
+    console.log("Apellido: " + ArregloAnidado[1][1]);
+    console.log("Edad " + ArregloAnidado[1][2]);
+    console.log("Fecha de nacimineto: " + ArregloAnidado[1][3] + "/" + ArregloAnidado[1][4] + "/" + ArregloAnidado[1][5]);
+    console.log("Altura: " + ArregloAnidado[1][6]);
+
+    console.log("");
+
+    console.log("Nombre: " + ArregloAnidado[2][0]);
+    console.log("Apellido: " + ArregloAnidado[2][1])
+    console.log("Edad " + ArregloAnidado[2][2]);
+    console.log("Fecha de nacimineto: " + ArregloAnidado[2][3] + "/" + ArregloAnidado[2][4] + "/" + ArregloAnidado[2][5]);
+    console.log("Altura: " + ArregloAnidado[2][6]);
+
+    //-----------------------------------------------------------------------------------------------------------------------//
+
+    console.log("");
+    console.log("Agregando y quitando a un arreglo");
+
+    var ArregloAQ = [1, 2, 3, 4];
+
+    console.log(ArregloAQ);
+
+    console.log("");
+    console.log("agregando 5");
+
+    ArregloAQ.push(5);
+
+    console.log(ArregloAQ);
+
+    console.log("");
+    console.log("quitando 5");
+
+    ArregloAQ.pop();
+
+    console.log(ArregloAQ);
+
+    console.log("");
+    console.log("quitando 1");
+
+    ArregloAQ.shift();
+
+    console.log(ArregloAQ);
+
+    console.log("");
+    console.log("agregando 1.5");
+
+    ArregloAQ.unshift(1.5);
+
+    console.log(ArregloAQ);
+
+    //--------------------------------------------------------------------------------------------------------//
+
+    console.log("");
+    console.log("Funciones");
+    console.log("");
+
+    function saludarAlMundo() {
+        console.log("Hola mundo! :D");
+    }
+
+    saludarAlMundo();
+    saludarAlMundo();
+    saludarAlMundo();
+
+    console.log("");
+    console.log("Funcion de suma con parametros");
+    console.log("");
+
+    function sumar(a, b) {
+        var suma = a + b;
+        console.log("El resultado de " + a + " + " + b + " es: " + suma);
+    }
+
+    var Precio = 100
+    var Comision = 15
+
+    sumar(Precio, Comision);
+
+    console.log("");
+    console.log("Funcion que retorna valor");
+    console.log("");
+
+    function sumarCD(c, d) {
+        return c + d;
+    }
+
+    console.log(sumarCD(5,3));
+
+    //----------------------------------------------------//
+
+    console.log("")
+    console.log("Fila de arreglo, no se que poner xd")
+
+    function proximoEnLaFila(arreglo, elemento) {
+        arreglo.push(elemento);
+        return arreglo.shift();
+    }
+
+    var myArray = [1, 2, 3, 4 , 5];
+
+    console.log("Antes " + JSON.stringify(myArray));
+
+    console.log(proximoEnLaFila(myArray, 6));
+
+    console.log("Despues " + JSON.stringify(myArray));
+
+</script>

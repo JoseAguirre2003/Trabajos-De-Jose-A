@@ -1,0 +1,102 @@
+<script>
+
+    var Nombre = 'Jose';
+
+    console.log(Nombre);
+
+    console.log("");
+    console.log("Cadena con comillas");
+
+    var CadenaConComillas = "Cadena con \"comillas\"";
+
+    console.log(CadenaConComillas);
+
+    console.log("");
+    console.log("Cadena con comillas mas simple");
+
+    var OtraCadenaConComillas = 'Otra cadena con "comillas"';
+
+    console.log(OtraCadenaConComillas);
+
+    //-----------------------------------------------------//
+
+    /* Secuencias de Escape
+
+    Codigo | Resultado
+
+    -------------
+
+    \' Comilla Simple
+    \" Comilla doble
+    \\ Barra Invertida
+    \n Linea Nueva
+    \r Retorno de Varro
+    \t Tabulacion
+    \b Retroceso
+    \f Salto de Pagina
+
+    -------------
+    */
+
+    var CadenaConBarra = "Cadena con \\ Barra \\";
+
+    console.log(CadenaConBarra);
+
+    var SaltoDeLinea = "(Saltpo de linea) Estoy aprendiendo: \nJavaScript";
+
+    console.log(SaltoDeLinea);
+
+    //-----------------------------------------------------//
+
+    console.log("");
+    console.log("Conexion de cadenas de caracteres");
+
+    var Nombre = "Jose";
+    var apellido = "Aguirre";
+
+    console.log(Nombre + " " + apellido);
+
+    console.log("");
+    console.log("Otra manera de concatenar");
+
+    var MeGustaElHelado = "Me gusta el helado con sabor a ";
+    var Sabor = "chocolate";
+
+    console.log(MeGustaElHelado);
+
+    MeGustaElHelado += Sabor;
+
+    console.log(MeGustaElHelado);
+
+    //-----------------------------------------------------//
+
+    console.log("")
+    console.log("Longitud de una cadena")
+
+    var CadenaABC = "ABCDEF";
+
+    console.log(CadenaABC);
+    console.log("La cadena tiene " + CadenaABC.length + " letras");
+
+    //-----------------------------------------------------//
+
+    console.log("");
+    console.log("Notación de corchetes");
+
+    console.log("De ejemplo de usa la Variable 'Nombre'");
+
+    console.log("Primera letra: " + Nombre[0]);
+    console.log("Segunda letra: " + Nombre[1]);
+    console.log("Tercera letra: " + Nombre[2]);
+    console.log("Cuarta letra: " + Nombre[3]);
+
+    console.log("");
+    console.log("Notación de corchetes: Ultimo caracter");
+
+    console.log("De ejemplo de usa la Variable 'apellido'");
+
+    console.log(apellido[apellido.length-1]);
+
+</script>
+
+<script src="./clase2.js"></script>

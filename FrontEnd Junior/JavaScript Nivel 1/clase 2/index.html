@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>clase 1</title>
+</head>
+<body>
+    <script>
+        const EDAD_MINIMA = 18;
+        const EDAD_MAXIMA = 90;
+        const SUELDO_MINIMO = 50;
+        const SUELDO_MAXIMO = 1000;
+
+        var edad = Math.random()*(EDAD_MAXIMA-EDAD_MINIMA)+EDAD_MINIMA;
+        var sueldo = Math.random()*(SUELDO_MAXIMO-SUELDO_MINIMO)+SUELDO_MINIMO;
+
+        console.log(`La edad del trabajador es ${edad} años`)
+        console.log(`La edad del trabajador es ${edad.toFixed(0)} años (usando toFixed)`)
+        console.log(`La edad del trabajador es ${Math.ceil(edad)} años (usando ceil)`)
+        console.log(`La edad del trabajador es ${Math.floor(edad)} años (usando floor)`)
+        console.log(`El sueldo del trabajor es ${sueldo.toFixed(2)}$`)
+
+        //debugger;
+        edad += 10;
+        var PORC_AUMENTO = Math.random();
+
+        sueldo = sueldo*(1+PORC_AUMENTO) // se duplica el sueldo del trabajador
+
+        console.log(`La edad del trabajador es ${edad.toFixed(0)} años`)
+        console.log(`El sueldo aumentado del trabajor es ${sueldo.toFixed(2)}$`)
+        console.log(`El porcentaje de aumento fue de ${(100*PORC_AUMENTO).toFixed(2)}%`) 
+    </script>
+
+    <script>
+        const SUELDO_MINIMOv2 = 50;
+        const SUELDO_MAXIMOv2 = 1000;
+        const EDAD_MINIMAv2 = 18;
+        const EDAD_MAXIMAv2 = 90;
+
+        var sueldov2 = Math.random()*(SUELDO_MAXIMOv2 - SUELDO_MINIMOv2 )+ SUELDO_MINIMOv2;
+        var edadv2 = Math.random()*(EDAD_MAXIMAv2 - EDAD_MINIMAv2 )+ EDAD_MINIMAv2;
+        var porcAumento;
+
+        console.log(`La edad del trabajador es ${edadv2.toFixed(0)} años`)
+
+        if (edadv2 > 50){
+            // ambas instrucciones se ejecutaran solo si edad>50
+            porcAumento = 0.1;
+            console.log(`El trabajado es mayor a 50 años. Le toca un aumento de 10%`)
+        }else {
+            porcAumento = 0
+            console.log(`No le toca aumento de ningun tipo`)
+        }
+
+        console.log("El sueldo base es de " + sueldov2)
+
+        var aumento = sueldov2*porcAumento;
+        sueldov2 += aumento;
+
+        var antiguedad = Math.random()*30
+        
+        if (antiguedad > 5){
+            var bono = Math.random()*(100 - 50) + 50
+            sueldov2 += bono
+            console.log("Debido a la antiguedad del empleado, recibira un bono de " + bono)
+        } else 
+            console.log("No habra bono de antiguedad")
+        
+        console.log(`El aumento del sueldo sera de ${aumento}$`)
+        console.log(`Con un bono de ${bono}$`)
+        console.log(`El nuevo sueldo es ${sueldov2}$`) 
+    </script>
+</body>
+</html>

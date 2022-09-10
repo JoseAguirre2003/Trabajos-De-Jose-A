@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    const EDAD_MINIMA = 45;
+    const EDAD_MAXIMA = 60;
+    var edad = Math.random() * (EDAD_MAXIMA - EDAD_MINIMA) + EDAD_MINIMA;
+
+    const SUELDO_MINIMO = 50;
+    const SUELDO_MAXIMO = 1000;
+    var sueldo = Math.random() * (SUELDO_MAXIMO - SUELDO_MINIMO) + SUELDO_MINIMO;
+
+    // se le pide al usuario que introduzca un valor de entrada
+    var nombre = prompt("Introduzca el nombre");
+
+    // se verifica si el usuario hizo click en el boton cancelar
+    // o si hizo click en aceptar pero no escribio nada
+    if (nombre == null || nombre == "")
+        alert(`Hizo click en cancelar o no escribio el nombre. 
+        Debe escribir el nombre para procesar al empleado`)
+    else {
+        var salida1 = `Su nombre es ${nombre} y su sueldo base es ${sueldo.toFixed(2)}$`
+
+
+        console.info(salida1)
+        alert(salida1)
+
+        var casado = confirm("¿Esta casado? Haga click en Aceptar en caso afirmativo")
+        var porcBono = 0;
+        var nuevoSueldo;
+
+        // si el usuario hizo click en el boton Aceptar en el confirm
+        if (casado) { // if (casado == true)
+            porcBono = 0.25
+
+            console.info
+                (`Por estar casado tendra un bono del ${porcBono * 100}%`)
+            alert(`Por estar casado tendra un bono del ${porcBono * 100}%`)
+        } else {
+            porcBono = 0.1
+
+            console.info
+                (`Por NO estar casado tendra un bono del ${porcBono * 100}%`)
+            alert(`Por NO estar casado tendra un bono del ${porcBono * 100}%`)
+        }
+
+        //Si la edad esta entre 45 o 60 años, se otroga bono del 20%
+
+        if (edad > 45 && edad < 60) {
+            console.log("Como la edad es entre 45 y 60 años se otorga un bono del 20%");
+            alert("Como la edad es entre 45 y 60 años se otorga un bono del 20%")
+            var porcBono = 0.2;
+        } else {
+            console.log("No esta entre 45 y 60 años");
+            alert("Como la edad no esta entre 45 y 60 años, no se otorga un bono del 20%")
+        }
+
+        // si la edad es menor a 30, el bonoEdad es 25, sino es 50
+        var bonoEdad = (edad < 30) ? 25 : 55;
+
+        alert(edad == 30 ? `Tienes 30 años` : `No tiene 30 años`)
+
+        nuevoSueldo = sueldo + sueldo * porcBono
+
+
+        console.info
+            (`El original era ${sueldo.toFixed(2)}$, 
+            ahora el nuevo sueldo es ${nuevoSueldo.toFixed(2)}$`)
+
+        alert(`El original era ${sueldo.toFixed(2)}$, 
+            ahora el nuevo sueldo es ${nuevoSueldo.toFixed(2)}$`)
+    } 
+</script>
+
+</html>

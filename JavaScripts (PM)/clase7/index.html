@@ -1,0 +1,176 @@
+<script>
+
+    console.log("Ciclos:");
+    console.log("Ciclo while:");
+    console.log("");
+
+
+    var i = 0;
+
+    while (i <= 7) {
+        console.log("Suscribanse a mi canal de twitch")
+        i++
+    }
+
+    var miArreglo = [];
+    var C = 0;
+
+    console.log(miArreglo);
+
+    while (C < 10) {
+        miArreglo.push(C);
+        C++;
+    }
+
+    console.log(miArreglo);
+
+    var numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+    console.log(numeros);
+
+    while (numeros.length > 4) {
+        numeros.pop();
+    }
+
+    console.log(numeros);
+
+
+//-------------------------------------------------------//
+
+    console.log("");
+    console.log("Ciclo for:");
+    console.log("");
+
+    var miOtroArreglo = []
+
+    for (var j = 0; j < 10; j += 2) {
+        miOtroArreglo.push(j);
+    }
+    
+    console.log(miOtroArreglo)
+
+    console.log("Ciclo for para numeros impares")
+    console.log("")
+
+    var arregloNumPar = [];
+
+    for (var k = 1; k <= 26; k += 2) {
+        arregloNumPar.push(k);
+    }
+
+    console.log(arregloNumPar);
+
+    console.log("");
+    console.log("Ciclo for hacia atras");
+    console.log("");
+
+    for (var l = 15; l >=10; l--) {
+        console.log(l);
+    }
+
+    var arregloHaciaAtras = [];
+
+    for (var m = 10; m > 0; m -= 2) {
+        arregloHaciaAtras.push(m);
+    }
+
+    console.log(arregloHaciaAtras);
+
+    console.log("");
+    console.log("Ciclo for para sumar un arreglo");
+    console.log("");
+
+    var arrASumar = [4, 6, 8, 2];
+    var total = 0;
+
+    for (var n = 0; n < arrASumar.length; n++) {
+        console.log("Iteracion " + n);
+        console.log(arrASumar[n]);
+        total += arrASumar[n];
+    }
+
+    console.log("Resultado:");
+    console.log(total);
+
+    console.log("");
+    console.log("Ciclo para lenguajes");
+    console.log("");
+
+    var lenguajes = ["JavaScript", "Python", "Java", "C++"];
+
+    for (var o = 0; o < lenguajes.length; o++) {
+        console.log(lenguajes[o].toUpperCase());
+    }
+
+    console.log("");
+    console.log("Ciclo for para contar numeros pares en arreglo");
+    console.log("");
+
+    function contarNumPares(array) {
+        var total = 0;
+
+        for (var i = 0; i < array.length; i++) {
+            if (array[i] % 2 == 0) {
+            total++;
+            }
+        }
+        return total;
+    }
+
+    console.log(contarNumPares([4, 5, 3, 2, 80]));
+
+    console.log("")
+    console.log("Ciclo anidado")
+    console.log("")
+
+    var miArregloV2 = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+
+    for (var p = 0; p < miArregloV2.length; p++) {
+        console.log("> Nueva iteracion");
+        var arregloAnidado = miArregloV2[p]; //Arreglo
+        console.log("Arreglo: " + arregloAnidado);
+
+        for (var q = 0; q < arregloAnidado.length; q++) {
+            console.log(">>> Ciclo anidado")
+            console.log("Elemento:")
+            console.log(arregloAnidado[q]); //Elemento
+        }
+    }
+
+    console.log("");
+    console.log("Busqueda de contactos");
+    console.log("");
+
+    var contactos = [
+        {
+            "nombre": "Gabriel",
+            "apellido": "España",
+            "numero": "0424-3505430"
+        },
+        {
+            "nombre": "Ennio",
+            "apellido": "Perez",
+            "numero": "0424-3346932"
+        },
+        {
+            "nombre": "Jose",
+            "apellido": "Aguirre",
+            "numero": "0412-8952280"
+        }
+    ]
+
+    function buscarPerfil(nombre, propiedad) {
+        for (var i = 0; i < contactos.length; i++) {
+            if (contactos[i].nombre === nombre) {
+            return contactos[i][propiedad] || "La propiedad no existe";
+            } 
+        }
+        return "El contacto no esta en la lista de contactos";
+    }
+
+    console.log(buscarPerfil("Ennio", "apellido"));
+    console.log(buscarPerfil("Gabriel", "numero"));
+    console.log(buscarPerfil("Jose", "gustos"));
+    console.log(buscarPerfil("Juan", "numero"));
+
+</script>

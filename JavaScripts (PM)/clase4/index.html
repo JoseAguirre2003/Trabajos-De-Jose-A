@@ -1,0 +1,235 @@
+<script>
+
+    console.log(false)
+    console.log(true)
+
+    console.log("")
+    console.log("Igualdad e igualdad estricta:")
+    console.log("")
+
+    console.log(9 == 9); //true
+    console.log(8 == "8"); //true
+
+    console.log(7 === 7); //true
+    console.log(6 === "6"); //False
+
+    console.log("")
+    console.log("Desigualdad:")
+    console.log("")
+
+    console.log(9 != 6) //true
+    console.log(9 != 9) //false
+
+    console.log("Hola" != "Adios") //True
+    console.log("Hola" != "Hola") //False
+
+    console.log(1 !== "1"); //True
+    console.log(1 != "1"); //False
+
+    //----------------------------------------------//
+
+    console.log("");
+    console.log("Mayores y menores");
+
+    console.log(6 > 5); //true
+    console.log(3 > 10); //false
+
+    console.log("B" > "A") //true
+    console.log("ACB" > "ABC") //true
+    console.log("AB" > "A") //true
+    console.log("Mundo" > "Hola") //true
+
+    var a = 15
+    var b = "10"
+
+    console.log(a > b) //true
+    console.log(b > a) //false
+
+    //-----------------------------------------------------//
+
+    console.log("")
+    console.log("Mayor o igual que")
+    console.log("")
+
+    console.log(5 >= "5"); //true
+    console.log("A" >= "A"); //true
+
+    //-----------------------------------------------------//
+
+    console.log("");
+    console.log("Operadores logicios");
+    console.log("");
+    console.log("and:");
+    console.log("");
+
+    var c = 8;
+
+    console.log((c > 5) && (c < 10)); //true
+
+    var d = 3;
+
+    console.log((d > 5) && (d < 10)); //false
+
+    var e = 15;
+
+    console.log((e > 5) && (e < 10)); //false
+
+    var f = 1;
+
+    console.log((f > 5) && (f == 3)); //false
+
+    console.log("");
+    console.log("or");
+    console.log("");
+
+    var g = 8;
+
+    console.log((g < 5) || (g > 15)); //false
+
+    var h = 2
+
+    console.log((h < 5) || (h > 15)); //true
+
+    var i = 20
+
+    console.log((i < 5) || (i > 15)); //true
+
+    var j = 5;
+
+    console.log((j == 5) || (j < 15)); //true
+
+    console.log("");
+    console.log("not");
+    console.log("");
+
+    var k = 8;
+
+    console.log(!(k > 5));//Dara falso
+
+    console.log(!(k < 5));//Dara true
+
+    //---------------------------------------------------//
+
+    console.log("");
+    console.log("Condicioneles");
+    console.log("");
+
+    console.log("");
+    console.log("Condicionel 'if'");
+    console.log("");
+
+    var l = 5;
+
+    if (l > 2) {
+    console.log("La condicion es verdadera");
+    }
+
+    if (l < 2) {
+    console.log("Esto no se mostrara");
+    }
+
+    console.log("");
+
+    var estacion = "Invierno";
+
+    if (estacion == "Invierno") {
+    console.log("Abriguese, es invierno!!");
+    }
+
+    console.log("");
+    console.log("Else");
+    console.log("");
+
+    estacion = "Verano";
+
+    if (estacion == "Invierno") {
+    console.log("Abriguese, es invierno!!");
+    } else {
+    console.log("No es invierno");
+    }
+
+    console.log("");
+    console.log("Else if");
+    console.log("");
+
+    function instruccionesParaLaEstacion(estacionActual){
+        if (estacionActual == "Invierno") {
+            console.log("Abriguese, es invierno!!");
+        } else if (estacionActual == "Verano") {
+            console.log("Use bloqueador!!");
+        } else {
+            console.log("No es ni verano ni invierno")
+        }
+    }
+
+    instruccionesParaLaEstacion("Invierno")
+    instruccionesParaLaEstacion("Verano")
+    instruccionesParaLaEstacion("Primavera")
+
+    console.log("");
+    console.log("Else if Anidados");
+    console.log("");
+
+    console.log("Ejemplo con el Indice de Masa Corporal(IMC)");
+
+    function interpretarIMC(indiceDeMasaCorporal) {
+        if (indiceDeMasaCorporal < 18.5) {
+            console.log("Bajo peso");
+        } else if (indiceDeMasaCorporal <= 24.9) {
+            console.log("Normal");
+        } else if (indiceDeMasaCorporal <= 29.9) {
+            console.log("Sobrepeso");
+        } else {
+            console.log("Obesidad")
+        }
+    }
+
+    console.log("")
+    console.log("Persona 1")
+    interpretarIMC(17.9)
+
+    console.log("")
+    console.log("Persona 2")
+    interpretarIMC(23.1)
+
+    console.log("")
+    console.log("Persona 3")
+    interpretarIMC(27.2)
+
+    console.log("")
+    console.log("Persona 4")
+    interpretarIMC(30.3)
+
+    //-----------------------------------------------------//
+
+    console.log("");
+    console.log("Campo de golf");
+    console.log("");
+
+    function puntajeDeGolf(par, golpes) {
+        if (golpes == 1) {
+            return "Hole-in-one!";
+        } else if(golpes <= par - 2) {
+            return "Eagle";
+        } else if (golpes == par - 1) {
+            return "Birdie";
+        } else if (golpes == par) {
+            return "Par";
+        } else if (golpes == par + 1) {
+            return "Bogey";
+        } else if (golpes == par + 2) {
+            return "Double Bogey";
+        } else if (golpes >= par + 3) {
+            return "Go home!";
+        }
+    }
+
+    console.log(puntajeDeGolf(4, 1));
+    console.log(puntajeDeGolf(4, 2));
+    console.log(puntajeDeGolf(4, 3));
+    console.log(puntajeDeGolf(4, 4));
+    console.log(puntajeDeGolf(4, 5));
+    console.log(puntajeDeGolf(4, 6));
+    console.log(puntajeDeGolf(4, 7));
+
+</script>

@@ -1,0 +1,158 @@
+<script>
+
+    console.log("Switch");
+    console.log("");
+
+    function seleccionDeProducto(producto){
+
+        switch (producto) {
+            case "Pizza":
+                console.log("La Pizza basica esta en $7");
+                break;
+            case "Hamburguesa":
+                console.log("La hamburguesa esta en $5");
+                break;
+            case "Helado":
+                console.log("EL helado esta en $1.5");
+                break;
+        }
+
+    }
+
+    seleccionDeProducto("Pizza");
+    console.log("Luego del switch");
+
+    console.log("")
+    console.log("Switch: Idioma")
+    console.log("")
+
+    function seleccionarIdioma(valor) {
+
+        var idioma;
+
+        switch (valor) {
+            case 1:
+                idioma = "Spanish";
+                break;
+            case 2:
+                idioma = "French";
+                break;
+            case 3:
+                idioma = "Italian";
+                break;
+            default:
+                idioma = "English";
+                break;
+        }
+        return idioma;
+    }
+
+    console.log(seleccionarIdioma(2));
+
+    console.log("")
+    console.log("Switch: Volumen")
+    console.log("")
+
+    function clasificarVolumen(valor) {
+
+        var volumen;
+
+        switch (valor) {
+            case 1:
+                volumen = "Bajo";
+                break;
+            case 2:
+            case 3:
+                volumen = "Intermedio";
+                break;
+            case 4:
+            case 5:
+            case 6:
+                volumen = "Alto";
+                break;
+        }
+        return volumen
+    }
+
+    console.log(clasificarVolumen(6))
+
+    //-----------------------------------------------------//
+
+    var num = 25;
+
+    console.log("")
+    console.log("Switch: Calcular Raiz cuadrada de " + num)
+    console.log("")
+
+    function calcularRaizCuadrada(num) {
+        if (num < 0) {
+            return undefined;
+        }
+        return Math.sqrt(num);
+    }
+
+    console.log(calcularRaizCuadrada(num))
+
+    //-----------------------------------------------------//
+
+    var num = 25;
+
+    console.log("")
+    console.log("Switch: Calcular Raiz cuadrada de " + num)
+    console.log("")
+
+    function calcularRaizCuadrada(num) {
+        if (num < 0) {
+            return undefined;
+        }
+        return Math.sqrt(num);
+    }
+
+    console.log(calcularRaizCuadrada(num))
+
+    //----------------------------------------------------//
+
+    console.log("")
+    console.log("Switch: Contar cartas")
+    console.log("")
+
+    var conteo = 0;
+
+    function contarCartas(carta) {
+
+        var decision;
+
+        switch (carta) {
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+            case 6:
+                conteo++;
+                break;
+            
+            case 10:
+            case "J":
+            case "Q":
+            case "K":
+            case "A":
+                conteo--;
+                break;
+        }
+
+        if (conteo > 0) {
+            decision = "Apostar";
+        } else {
+            decision = "Esperar";
+        }
+
+        return conteo + " " + decision;
+
+    }
+
+    console.log(contarCartas(10))
+    console.log(contarCartas("K"))
+    console.log(contarCartas("J"))
+    console.log(contarCartas("A"))
+
+</script>

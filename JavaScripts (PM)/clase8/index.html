@@ -1,0 +1,97 @@
+<script>
+
+    console.log("");
+    console.log("Generer fraccion aleatorio");
+    console.log();
+
+    function generarFraccionAleatoria() {
+        return Math.random();
+    }
+
+    console.log(generarFraccionAleatoria());
+    console.log(generarFraccionAleatoria());
+    console.log(generarFraccionAleatoria());
+    console.log(generarFraccionAleatoria());
+    console.log(generarFraccionAleatoria());
+    console.log(generarFraccionAleatoria());
+
+    console.log(Math.random());
+
+    var numeroAleatorio = Math.random();
+
+    console.log(numeroAleatorio);
+
+    console.log("");
+    console.log("Generer fraccion aleatorio entero");
+    console.log("");
+
+    var numeroAleaEntero = Math.floor(Math.random() * 20);
+
+    console.log(numeroAleaEntero)
+    console.log("")
+
+    function generarEnteroAleatorio(limiteSuperior) {
+        return Math.floor(Math.random() * limiteSuperior)
+    }
+
+    for (var i = 0; i < 15; i++) {
+        console.log(generarEnteroAleatorio(5))
+    }
+
+    console.log("");
+    console.log("Generer fraccion aleatorio entero con limite superior e inferior");
+    console.log("");
+
+    function rangoAleatorio(limiteInf, limiteSup) {
+        return Math.floor(Math.random() * (limiteSup - limiteInf + 1)) + limiteInf;
+    }
+
+    for (var j = 0; j < 10; j++) {
+        console.log(rangoAleatorio(1, 3));
+    }
+
+    console.log("")
+    console.log("Funcion parseInt")
+    console.log("")
+
+    var a = "5";
+    var b = "5";
+
+    console.log(a + b);
+
+    a = parseInt("5");
+    b = parseInt("7");
+
+    console.log(a + b);
+
+    console.log("");
+    console.log("Funcion parseInt con base");
+    console.log("");
+
+    console.log(parseInt(110111, 2));
+
+    console.log(parseInt("3E0A", 16));
+
+    //-------------------------------------------------//
+
+    console.log("");
+    console.log("Condicional Ternario");
+    console.log("");
+
+    function retornarMinimo(x, y) {
+        return x < y ? x : y;
+    }
+
+    console.log(retornarMinimo(4, 7));
+    console.log(retornarMinimo(8, 2));
+    console.log(retornarMinimo(5, 5)); 
+
+    var a = 5;
+    var b = 9;
+
+    console.log(a > b ? a + 2: b * 3);
+
+    console.log("log")
+    console.info("info")
+
+</script>

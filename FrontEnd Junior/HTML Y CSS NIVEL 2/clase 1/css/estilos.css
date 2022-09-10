@@ -1,0 +1,58 @@
+/* REGLAS GENERALES DE ESTILO */
+*{
+  font-family: 'Segoe UI';
+}
+
+body{
+  margin: 0;
+}
+a{
+  color: #C5C3C0;
+  text-decoration: none;
+}
+
+
+/* HEADER */
+header{
+  background-color: #171A21;
+  height: 100px;
+  padding: 0px 18% 25px;
+  box-sizing: border-box;
+}
+
+#primerDivHeader{
+  height: 25px;
+}
+#ulHeaderSuperior{
+  color: #C5C3C0;
+  margin: 0;
+  float: right;
+}
+.liUlHeaderSup{
+  display: inline-block;
+  margin-left: 18px;
+}
+#instalarSteam{
+  padding: 5px 10px;
+  background-color: #5c7e10;
+}
+#idioma{
+  border-left: solid 1px #C5C3C0;
+  padding-left: 15px;
+}
+
+
+#imgLogo{
+  width: 176px;
+}
+#ulHeader{
+  color: #C5C3C0;
+  display: inline-block;
+  /* position: relative;
+  top: -15px; */
+}
+.liUlHeader{
+  display: inline-block;
+  text-transform: uppercase;
+  margin-left: 10px;
+}
