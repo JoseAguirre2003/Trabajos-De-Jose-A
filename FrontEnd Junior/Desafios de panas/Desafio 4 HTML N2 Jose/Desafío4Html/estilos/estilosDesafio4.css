@@ -1,0 +1,258 @@
+/* GLOBALES */ 
+* {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+/*HEADER*/
+
+#header-imagen {
+    width: 100%;
+    height: 740px;
+    background-image: url("../img/banner.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#header-imagen:before {
+    content: "";
+    width: 100%;
+    height: 97.9%;
+    background: linear-gradient(90deg,rgb(131,96,195) 0%, rgb(46,191,145) 99.5%); 
+    opacity: 0.85;
+    position: absolute;
+} 
+
+#logotipo {
+    float: left;
+    height: 200px;
+    position: relative;
+    margin-left: 112px;
+    margin-top: 5px;
+}
+
+#menu {
+    float: right;
+    position: relative;
+    margin-top: 85px;
+    margin-right: 107px;
+}
+
+.opciones {
+    padding-top: 20px;
+    border-top: solid transparent;
+    display: inline-block;
+    color: white;
+    font-size: 20px;
+    margin-right: 13px;
+}
+
+.opciones:hover {
+    color:  #fff77c;
+    border-top: 3px solid yellow;
+    transition-duration: 0.5s;
+}
+
+#header-imagen #Container-Agencia {
+    text-align: center;
+    color: white;
+    clear:both;
+    position: relative;
+    top: 75px;
+}
+
+#Container-Agencia > h1 {
+    font-size: 120px;
+    font-weight: 200;
+}
+
+.botonesFantasma {
+    margin-top: 30px;
+    color:#997fca;
+    background:#fff77c;
+    border: 2px solid transparent;
+    border-radius: 200px;
+    display: inline-block;
+    font-size: 18px;
+    padding: 15px 30px 15px 30px;
+}
+
+.botonesFantasma.uno:hover, .botonesFantasma.dos:hover, .botonesFantasma.tres:hover {
+    border: 2px solid #fff77c;
+    color:#fff77c;
+    background: transparent;
+    transition-duration: 0.3s;
+}
+
+.botonesFantasma.uno {
+    margin-right: 25px; 
+}
+
+.botonesFantasma.tres {
+    position: relative;
+    top: 40px;
+    left: 450px;
+} 
+
+/* SECCIONES */
+
+#trabajar-gradient, #footer-gradient {
+    width: 100%;
+    background: linear-gradient(90deg,rgb(131,96,195) 0%, rgb(46,191,145) 99.5%); 
+    opacity: 0.7;
+} 
+
+#trabajar-gradient {
+    height: 200px;
+}
+
+#trabajar-gradient #textTrabajo{
+   font-size: 50px;
+   display: inline-block;
+   color: white;
+   position: relative;
+   top: 50px;
+   left: 90px;
+}
+
+#servicios {
+    text-align: center;
+    height: 526px;
+}
+
+
+.ServText {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 25px;
+    font-size: 30px;
+    font-weight:bold;
+} 
+
+#servicios .containServ {
+    height: 400px;
+    width: 347px;
+    box-shadow: 1px 1px 13px 0px rgb(144,164,174);
+    text-align: center;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.containServ > .fotoContains {
+    margin-top: 40px;
+    height: 250px;
+    height: 250px;
+}
+
+.containServ > .tituloServ {
+    color: rgb(131,96,195);
+    font-size: 25px;
+    font-weight:bolder;
+}
+
+.containServ.one {
+    float: left;
+    position: relative;
+    right: -130px;
+}
+
+.containServ.three {
+    float: right;
+    position: relative;
+    left: -130px;
+}
+
+.containServ .loremText {
+    margin-top: 10px;
+}
+
+#textTrabajo:hover {
+    transform: rotateX(360deg) scale(.7,.8) skew(10deg, 5deg); 
+    transition-delay: 0.2s;
+    transition-timing-function: ease-in;
+    transition-duration: 3s;
+}
+
+#clientes {
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.iconosClientes {
+    display: inline-block;
+    filter: grayscale(100%);
+}
+
+.iconosClientes.unoh {
+    height: 205px;
+    width: 270px;
+    position: relative;
+    right: 100px;
+}
+
+.iconosClientes.doh {
+    height: 200px;
+    width: 200px;
+    position: relative;
+    right: 100px;
+}
+
+.iconosClientes.treh {
+    height: 160px;
+    width: 160px;
+    position: relative;
+    right: 40px;
+    top: -20px;
+}
+
+.iconosClientes.cuatroh {
+    height: 150px;
+    width: 190px;
+    position: relative;
+    right: -10px;
+    top: -25px;
+}
+
+.iconosClientes.cincoh {
+    height: 200px;
+    width: 200px;
+    position: relative;
+    left: 60px;
+}
+
+.iconosClientes:hover {
+    transform: rotate(360deg);
+    filter: grayscale(0%);
+    transition-duration: 1s;
+}
+
+#footer-gradient {
+    text-align: center;
+    height: 430px;
+}
+
+#footerImg {
+    width: 240px;
+    height: 240px;
+    margin-top: 70px;
+}
+
+#footerborder {
+    width: 120px;
+    position: relative;
+    color: transparent;
+    border-bottom: 2px solid white;
+    right: -650px;
+    bottom: 20px;
+}
+
+.derechos {
+    display: inline-block;
+    color: white;
+    font-size: 20px;
+}
+
+.derechos.negritas {
+    font-weight: bold;
+}

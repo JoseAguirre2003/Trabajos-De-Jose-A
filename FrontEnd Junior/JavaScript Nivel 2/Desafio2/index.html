@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Desafio 2 de JS</title>
+</head>
+<body>
+
+    <script src="./js/main.js"></script>
+
+    <div id="Error">ERROR:...</div>
+
+    <div>
+        <h1>Procesamiento de notas</h1>
+    </div>
+
+    <form name="tomaNotas">
+
+        
+        Ingrese Nombre del Estudiante:<input type="text" name="nombre"> <br>
+
+        Ingrese la Nota 1:<input type="text" name="nota1"> <br>
+        
+        Ingrese la Nota 2:<input type="text" name="nota2"> <br>
+        
+        Ingrese la Nota 3:<input type="text" name="nota3"> <br>
+        
+        Ingrese la Nota 4:<input type="text" name="nota4"> <br>
+       
+        Ingrese la Nota del Desafio Teorico:<input type="text" name="notaTeorico"> <br>
+
+        <input type="button" name="comprobarSiAprob" value="Comprobar si aprobo" 
+        onclick="tomarNota()">
+
+        <input type="button" name="RegistrarNotas" value="Registrar notas" 
+        onclick="registrarAlumno()"> <br>
+
+        <hr>
+        Promedio:<input type="text" disabled name="promedioID" value="0"> <br>
+
+    </form>
+
+    <span id="aprobacion">El Alumno ha...</span>
+    <div>Cantidad de alumnos que superarn el nivel:<span id="CantidadAlumnosApr">0</span></div>
+    <div>Cantidad de alumnos que no superan el nivel:<span id="CantidadAlumnosRep">0</span></div>
+
+    <!-- <p>Promedio:<span id="promedioID">0</span></p> -->
+    
+
+</body>
+</html>

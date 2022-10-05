@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Capitulo 3</title>
+    <script async src="codigo.js"></script>
+</head>
+<!--
+    todos los manejadores de eventos de window se asignan
+    a la etiqueta body
+-->
+<body
+    onblur="console.log('abandono la pagina')"
+    onscroll="console.log(window.scrollY)"
+    onload="console.log('se cargo la pagina completa')">
+    <h1>Práctica de Eventos</h1>
+
+    <a href="http://google.com" target="_blank">Abrir google</a>
+    <button onclick="window.open('http://google.com')">Abrir Pestaña Google</button>
+    <button onclick="window.open('http://google.com','ventana_google','width=450px,height=450px')">Abrir Ventana Google</button>
+    <a href="#" onclick="getNavigatorName()">Navegador</a>
+    <button onclick="abrirVentana()">Abrir ventana</button>
+    <button onclick="window.print()">Imprimir</button> |
+    <a href="#" onclick="calcular()">Calcular</a> |
+    <a onclick="console.log(`hola mundo`)" href="#">Saludar</a> | 
+    <p onclick="leerNombre()">Nombre</p>
+    <img width="200px" height="200px" src="https://images6.alphacoders.com/568/568500.jpg"
+         onload="console.log('se cargo el paisaje')"/>
+    <img width="200px" height="200px" src="https://t1.ea.ltmcdn.com/es/posts/3/1/8/los_10_felinos_mas_grandes_del_mundo_23813_orig.jpg"
+         onload="console.log('se cargo el tigre')"/>
+    <img  src="https://wallpaperaccess.com/full/752775.jpg"
+         onload="console.log('se cargo la mano')"
+         
+         onmouseover="console.log(`entro`)"
+         onclick="console.log('click')"/>
+    <a href="#" onclick="window.scrollTo(0,0)">Subir</a>
+    <script>
+        function abrirVentana(){
+            let ventana = window.open("capitulo3_1.html","","width=10px,height=10px")
+
+            // se mueve la esquina superior izquierda de la ventana a la posicion indicada
+            ventana.moveTo(-100,window.screen.availHeight/2)
+            // redimensionar la ventana
+            ventana.resizeTo(window.screen.width/2,window.screen.availHeight/2)
+            
+        }
+
+        console.log("Ejecucion directa")
+
+        function leerNombre(){
+            nombre=prompt('Introduzca el nombre:');
+            console.log(nombre)
+        }
+    </script>
+    
+</body>
+
+</html>

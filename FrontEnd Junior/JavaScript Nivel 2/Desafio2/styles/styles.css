@@ -1,0 +1,18 @@
+html, body {
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+#aprobacion {
+    display: none;
+}
+
+#YaRegistrado {
+    display: none;
+    background-color: #b13e3e;
+}
+
+#Error {
+    display: none;
+    background-color: #b13e3e;
+}

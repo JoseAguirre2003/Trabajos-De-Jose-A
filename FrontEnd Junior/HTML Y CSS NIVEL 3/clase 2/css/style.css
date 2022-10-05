@@ -1,0 +1,249 @@
+@import url('./importado.css') print;
+
+*{
+  box-sizing: border-box;
+}
+/* h1{
+  color: rgb(28, 171, 207);
+} */
+
+/* .col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;} */
+
+body{
+  margin: 0;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;;
+}
+
+/*HEADER */
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3%;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #E60012;
+  z-index: 1000;
+}
+header img{
+  width: 96px;
+  height: 24px;
+}
+header > div:last-child{
+  display: flex;
+  color: white;
+  flex-basis: 15%;
+  justify-content: space-around;
+}
+header > div:last-child > div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header > div:last-child > div > span{
+  font-size: 12px;
+}
+
+/*FIN HEADER*/
+
+
+/*MENU LATERAL*/
+#menu{
+  display: flex;
+  flex-direction: column;
+  width: 88px;
+  height: calc(100vh - 70px);
+  background-color: #E60012;
+  position: fixed;
+  left: 0;
+  top: 70px;
+}
+#menu > div{
+  flex: 0 1 100%;
+  height: 14%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  border-top: solid 1px #710b13;
+}
+#menu > div:hover{
+  background-color: #e84e5bab;
+  cursor: pointer;
+}
+#menu > div svg{
+  font-size: 32px;
+  fill: white;
+}
+#menu > div p{
+  text-align: center;
+  margin: 0;
+  font-size: 12px;
+}
+
+/*FINMENU LATERAL*/
+
+/*MAIN*/
+
+main{
+  display: flex;
+  position: relative;
+  left: 88px;
+  background-color: #F4F4F4;
+  /* top: 70px; */
+  /* background-color: aquamarine; */
+  /* height: 250px; */
+  width: calc(100% - 88px);
+  padding: 5px;
+}
+/**No se necesita porque ahora usaremos flex*/
+/* main > section{
+  display: inline-block;
+} */
+
+#products{
+  background-color: blue;
+  height: 700px;
+  /* Este ancho aplica siempre que sean pantallas de 991px o menos */
+  width: 100%;
+}
+
+/*NEWS*/
+#news{
+  /* background-color: chartreuse; */
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 5px;
+}
+#titulo{
+  height: 34px !important;
+  padding: 12px !important;
+  background-color: white;
+  box-sizing: content-box !important;
+  display: flex;
+  align-items: center;
+}
+#titulo > div{
+  border-left: lightgrey 3px solid;
+  padding-left: 20px;
+  font-weight: bold;
+  text-transform: capitalize;
+  flex: 0 1 100% !important;
+}
+
+#news > div{
+  height: 18vh;
+  margin-bottom: 5px;
+  padding: 5px 5px 12px 5px;
+  background-color: white;
+  display: flex;
+}
+#news > div:hover{
+  cursor: pointer;
+}
+#news > div > div:first-child{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  flex: 0 1 25%;
+}
+#news > div:nth-child(2) > div:first-child{
+  background-image: url("https://fs-prod-cdn.nintendo-europe.com/media/images/11_square_images/others_4/nintendo_eshop_6/weekly_download_news/1x1_WeeklyDownloadNews_20220922_esES_image950w.jpg");
+}
+#news > div:nth-child(3) > div:first-child{
+  background-image: url("https://fs-prod-cdn.nintendo-europe.com/media/downloads/country_support_4/es_16/SQ_Bayonetta3_Preventa_image950w.jpg");
+}
+#news > div:nth-child(4) > div:first-child{
+  background-image: url("https://fs-prod-cdn.nintendo-europe.com/media/images/11_square_images/others_4/nintendo_eshop_6/weekly_download_news/1x1_WeeklyDownloadNews_20220915_esES_image950w.jpg");
+}
+
+#news > div > div:last-child{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 16px;
+  flex: 0 1 75%;
+}
+#news > div > div:last-child h3,span,p{
+  margin: 0;
+}
+#news > div:hover > div:last-child h3{
+  text-decoration: underline;
+  cursor: pointer;
+}
+#news > div > div:last-child > span{
+  font-size: 0.75em;
+  color: lightgray;
+}
+#news > div > div:last-child p{
+  font-size: 0.85em;
+  color: rgb(96, 94, 94);
+}
+
+
+/*FIN NEWS*/
+
+
+
+/*Fin MAIN*/
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  #products{
+    width: 66%;
+  }
+  #news{
+    width: 34%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
+
+/* Mostrando la query de medio para impresion */
+@media print {
+  h1{
+    color: red;
+  }
+}
+
+
+@media screen and (max-width: 425px){
+  
+}
+
+

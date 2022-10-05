@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Clase 1</h1>
+    <script src="./js/otros.js"></script>
+    <script src="./js/funciones.js"></script>
+    <script src="./js/funcionCantidad.js"></script>
+    <script src="./js/funcion2.js"></script>
+    <script>
+        const MONTO = 100;
+
+        debugger;
+        holaMundo()
+        saludar();
+
+        function holaMundo() {
+            alert("hola mundo")
+        }
+        function leerNombresClientes() {
+            do {
+                // declaracion local al scope del ciclo do..while
+                let nombre
+                do {
+                    nombre = prompt(`Introduzca el nombre del cliente ${nombres.length + 1}`)
+                    if (nombre == null || nombre.trim() == "")
+                        alert("Debe escribir el nombre. Intente de nuevo")
+
+                } while (nombre == null || nombre.trim() == "");
+
+                console.log(MONTO)
+
+                if (nombres.length == 0)
+                    // agrega un elemento al final del arreglo
+                    nombres.push(nombre)
+                else
+                    if (confirm("Desea agregarlo al final?"))
+                        nombres.push(nombre)
+                    else
+                        // agrega un elemento al comienzo del arreglo
+                        nombres.unshift(nombre)
+
+                // se unen en una cadena los valores del arreglo usando \n como separador
+                console.log(nombres.join("\n"))
+
+            } while (confirm("Otro?"))
+        }
+    </script>
+    <script>
+        "use strict";
+
+        saludar()
+        let nombres = []
+
+        leerNombresClientes()
+        alert(`Los nombre introducidos son: \n${nombres.join("\n")}`)
+
+        funcionCantidad()
+        // produciria error porque "i" fue declarada con let en el ciclo anterior
+        //console.log(i)
+
+        posicionIvitados()
+
+        holaMundo() // producira un error porque la funcion aun no esta definida
+    </script>
+</body>
+
+</html>

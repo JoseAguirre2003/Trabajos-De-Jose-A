@@ -1,0 +1,9 @@
+1. Crear el archivo index.html
+2. Crear la carpeta de css y crear tres (3) archivos de CSS, uno llamado style.css, otro llamado importado.css y otro linkeado.css
+3. "Linkear" el archivo linkeado.css colocando el atributo media; sin colocar algun valor.
+4. "Linkear" el archivo style.css sin el uso de media.
+5. importar dentro del archivo style.css el archivo importado.css.
+6. Escribir dentro del archivo style.css la regla @media con la consulta de medio "print".
+	-> @media print{
+	     
+	   }

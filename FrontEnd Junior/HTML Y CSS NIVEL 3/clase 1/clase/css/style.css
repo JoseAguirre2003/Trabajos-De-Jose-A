@@ -1,0 +1,106 @@
+@import url('./importado.css') print;
+
+/* h1{
+  color: rgb(28, 171, 207);
+} */
+
+/* .col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;} */
+
+body{
+  margin: 0;
+}
+
+header{
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #E60012;
+  z-index: 1000;
+}
+
+#menu{
+  width: 88px;
+  height: calc(100vh - 70px);
+  background-color: #E60012;
+  position: fixed;
+  left: 0;
+  top: 70px;
+}
+
+main{
+  position: relative;
+  left: 88px;
+  /* top: 70px; */
+  background-color: aquamarine;
+  height: 250px;
+  width: calc(100% - 88px);
+}
+main > section{
+  display: inline-block;
+}
+
+#products{
+  background-color: blue;
+  height: 700px;
+  /* Este ancho aplica siempre que sean pantallas de 991px o menos */
+  width: 100%;
+}
+#news{
+  background-color: chartreuse;
+  height: 700px;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  #products{
+    width: 66%;
+  }
+  #news{
+    width: 33%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
+
+/* Mostrando la query de medio para impresion */
+@media print {
+  h1{
+    color: red;
+  }
+}
+
+
+@media screen and (max-width: 425px){
+  
+}
