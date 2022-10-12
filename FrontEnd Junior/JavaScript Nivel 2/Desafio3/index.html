@@ -6,14 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/styles.css">
-    <title>Desafio 2 de JS</title>
+    <title>Desafio 3 de JS</title>
 </head>
 
 <body>
     <header>
         <img src="./img/logo-cadi-blanco.svg" alt="logoCADIF1" height="100%">
     </header>
-    <!-- <script src="./js/main.js"></script> -->
+    <script src="./js/main.js"></script>
+    <script src="./js/funciones.js"></script>
 
     <div id="Error">ERROR:...</div>
 
@@ -26,26 +27,28 @@
         <form name="tomaNotas">
 
             Ingrese Nombre del Estudiante:<br>
-            <input type="text" name="nombre"> <br>
+            <input type="text" name="nombre" class="nota"> <br>
 
             Ingrese la Nota 1:<br>
-            <input type="text" name="nota1"> <br>
+            <input type="text" name="nota1" class="nota"> <br>
 
             Ingrese la Nota 2:<br>
-            <input type="text" name="nota2"> <br>
+            <input type="text" name="nota2" class="nota"> <br>
 
             Ingrese la Nota 3:<br>
-            <input type="text" name="nota3"> <br>
+            <input type="text" name="nota3" class="nota"> <br>
 
             Ingrese la Nota 4:<br>
-            <input type="text" name="nota4"> <br>
+            <input type="text" name="nota4" class="nota"> <br>
 
             Ingrese la Nota del Desafio Teorico:<br>
-            <input type="text" name="notaTeorico"> <br>
+            <input type="text" name="notaTeorico" class="nota"> <br>
 
             <input id="BotonTomaNotas" type="button" name="comprobarSiAprob" value="Comprobar si aprobo">
 
             <input id="BotonRigistrar" type="button" name="RegistrarNotas" value="Registrar notas"> <br>
+
+            <input id="GenerarNotas" type="button" name="generarNotas" value="Generar Notas">
             <hr>
             Promedio:<br>
             <input type="text" disabled name="promedioID" value="0"> <br>
@@ -57,13 +60,28 @@
     </div>
 
     <div id="info">
-        <div>Cantidad de alumnos que superarn el nivel:<span id="CantidadAlumnosApr">0</span></div>
+        <div>Cantidad de alumnos que superan el nivel:<span id="CantidadAlumnosApr">0</span></div>
         <div>Cantidad de alumnos que no superan el nivel:<span id="CantidadAlumnosRep">0</span></div>
     </div>
 
-    <!-- <p>Promedio:<span id="promedioID">0</span></p> -->
-
-    <script src="./js/main.js"></script>
+    <table id="tabla" style="text-align: center;" border="1">
+        
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Desafio 1</th>
+                <th>Desafio 2</th>
+                <th>Desafio 3</th>
+                <th>Desafio 4</th>
+                <th>Promedio</th>
+                <th>Desafio 5</th>
+                <th>Estatus</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
 
 </body>
 

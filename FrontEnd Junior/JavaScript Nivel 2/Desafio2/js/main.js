@@ -6,7 +6,13 @@ let promedio;
 let notaTeorica;
 let ArrEstudiantes = [];
 
-function tomarNota() {
+let botonTomarNotas = document.getElementById("BotonTomaNotas");
+let botonRegistraNotas = document.getElementById("BotonRigistrar")
+
+botonRegistraNotas.addEventListener("click", registrarAlumno);
+
+botonTomarNotas.onclick = function () 
+{
 
     //Declaraciones de variables locales de tomaNota()
 
@@ -86,7 +92,7 @@ function tomarNota() {
     
     errorCont = 0;
 
-}
+};
 
 function registrarAlumno() {
 
