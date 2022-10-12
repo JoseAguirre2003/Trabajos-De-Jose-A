@@ -22,20 +22,23 @@ void main(){
 
     circunferencia = 2 * pi * radio;
     
-    printf("\nLa circunferencia es:");
-    printf("%f", circunferencia);
+    printf("\nLa circunferencia es: %f", circunferencia);
 
     if (circunferencia < 100) {   
 
         printf("\nLa circunferencia es menor a 100, por lo tanto se duplica el valor del radio\n");
         radio *= 2;
+        circunferencia = 2 * pi * radio;
         printf("El nuevo valor del radio es %f\n", radio);
+        printf("Y el nuevo valor de la circunferencia es %f\n", circunferencia);
 
     } else {
         
         printf("\nLa circunferencia no es menor a 100, por lo tanto se decrementa en 1 el valor del radio\n");
         radio--;
+        circunferencia = 2 * pi * radio;
         printf("El nuevo valor del radio es %f\n", radio);
+        printf("Y el nuevo valor de la circunferencia es %f\n", circunferencia);
 
     }
 
