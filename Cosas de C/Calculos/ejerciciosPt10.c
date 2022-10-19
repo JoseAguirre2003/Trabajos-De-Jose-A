@@ -20,7 +20,9 @@ void main(){
         horas++;
     }
 
-    if (horas >= 24 && minutos > 0 && segundos > 0)
+    if ((horas == 24) && (minutos > 0 || segundos > 0))
+        horas = 0;
+    else if (horas > 24)
         horas = 0;
 
     printf("%i Horas %i Minutos %i Segundos\n", horas, minutos, segundos);
