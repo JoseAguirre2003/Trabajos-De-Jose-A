@@ -1,0 +1,63 @@
+* {
+    margin: 0%;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+
+    background-color: rgb(28, 31, 41);
+
+}
+
+header {
+
+    background-color: rgb(24, 22, 32);
+    border-bottom: solid 2px orange ;
+
+}
+
+img {
+    padding: 1%;
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+
+.imgSelecc {
+    border: solid 5px orange;
+    border-radius: 3%;
+}
+
+td {
+    height: 9rem;
+    width: 9rem;
+}
+
+main > div > div {
+
+    border: solid 2px orange;
+
+}
+
+#muestra {
+    height: 30rem;
+    width: 30rem;
+}
+
+#btn {
+
+    text-align: center;
+    background-color: rgb(76, 177, 76);
+    width: 8rem;
+    padding: 5%;
+    border-radius: 3%;
+
+}
+
+#btn:hover{
+
+    background-color: rgb(133, 201, 133);
+    cursor: pointer;
+
+}
