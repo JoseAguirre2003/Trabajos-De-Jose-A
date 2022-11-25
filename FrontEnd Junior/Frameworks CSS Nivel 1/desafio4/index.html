@@ -1,0 +1,1018 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Desafio 4</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <header class="container-fluid px-0" style="background-color: rgb(255, 255, 255); height: 10%;">
+
+    <!-- HEADER MOVIL -->
+
+    <div class="d-flex d-md-none justify-content-between align-items-center" style="height: 100%;">
+      <div class="p-1 d-flex align-items-center" style="height: 100%;">
+        <img class="hd-img me-1" src="./img/facebook-logo.PNG" alt="facebook-logo">
+        <ion-icon class="me-1 p-2 rounded-circle" name="search-outline" style="background-color: #dddddd;"></ion-icon>
+        <ion-icon class="p-2 ms-2" name="menu" style="background-color: transparent;"></ion-icon>
+      </div>
+      <div class="d-flex flex-row-reverse">
+        <ion-icon class="p-2 rounded-circle" name="caret-down-outline" style="background-color: #dddddd;"></ion-icon>
+        <img class="hd-img me-1 p-1 rounded-circle" src="./img/bell.png" alt="notificacion-logo"
+          style="background-color: #dddddd;">
+        <img class="hd-img me-1 p-1 rounded-circle" src="./img/mensajero.png" alt="Ms-Logo"
+          style="background-color: #dddddd;">
+        <ion-icon class="me-1 p-2 rounded-circle" name="add-outline" style="background-color: #dddddd;"></ion-icon>
+      </div>
+    </div>
+
+    <!-- HEADER ESCRITORIO -->
+
+    <div class="container-fluid d-none d-md-block">
+      <div class="row">
+        <div class="col-2 col-lg-3 d-flex align-items-center">
+          <nav class="d-flex flex-row">
+            <a href="">
+              <img class="hd-img me-1" src="./img/facebook-logo.PNG" alt="facebook-logo">
+            </a>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2 rounded" type="search" placeholder="Buscar en Facebook"
+                aria-label="Search" style="border: transparent; background-color: #dddddd;">
+            </form>
+          </nav>
+        </div>
+        <div class="col-6 col-lg-6 py-0">
+
+          <nav class="navbar navbar-expand-sm bg-light py-0">
+
+            <ul class="navbar-nav d-flex align-items-end justify-content-between w-100 py-0 px-4">
+
+              <li class="nav-item">
+
+                <a class="nav-link dropdown-toggle p-1" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <ion-icon class="btn menu-icon" name="home-outline"></ion-icon>
+                </a>
+                <ul class="dropdown-menu" style="margin-left: 5%;">
+                  <li>
+                    <a href="" class="dropdown-item">Mas Recientes</a>
+                  </li>
+                  <li>
+                    <a href="" class="dropdown-item">Mas populares</a>
+                  </li>
+                  <li>
+                    <a href="" class="dropdown-item">Amigos</a>
+                  </li>
+                  <li>
+                    <a href="" class="dropdown-item">Paginas</a>
+                  </li>
+                  <li>
+                    <a href="" class="dropdown-item">Ventas</a>
+                  </li>
+                </ul>
+
+              </li>
+
+              <li class="nav-item">
+
+                <a class="nav-link dropdown-toggle p-1" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <ion-icon class="btn menu-icon" name="tv-outline"></ion-icon>
+                </a>
+                <ul class="dropdown-menu" style="margin-left: 25%;">
+                  <li>
+                    <a href="" class="dropdown-item">Mas recientes</a>
+                  </li>
+                  <li>
+                    <a href="" class="dropdown-item">Mas populares</a>
+                  </li>
+                  <li>
+                    <a href="" class="dropdown-item">Amigos</a>
+                  </li>
+                  <li>
+                    <a href="" class="dropdown-item">Paginas</a>
+                  </li>
+                </ul>
+
+              </li>
+
+              <li class="nav-item">
+
+                <a class="nav-link dropdown-toggle p-1" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <ion-icon class="btn menu-icon" name="storefront-outline"></ion-icon>
+                </a>
+                <ul class="dropdown-menu" style="margin-left: 45%;">
+                  <li>
+                    <a href="" class="dropdown-item">Ofertas</a>
+                  </li>
+                  <li>
+                    <a href="" class="dropdown-item">Ventas</a>
+                  </li>
+                  <li>
+                    <a href="" class="dropdown-item">Compras</a>
+                  </li>
+                  <li>
+                    <a href="" class="dropdown-item">Carrito</a>
+                  </li>
+                </ul>
+
+              </li>
+
+              <li class="nav-item">
+
+                <a class="nav-link dropdown-toggle p-1" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <ion-icon class="btn menu-icon" name="people-circle-outline"></ion-icon>
+                </a>
+                <ul class="dropdown-menu" style="margin-left: 65%;">
+                  <li>
+                    <a href="" class="dropdown-item">Lista de amigos</a>
+                  </li>
+                  <li>
+                    <a href="" class="dropdown-item">Solicitudes</a>
+                  </li>
+                  <li>
+                    <a href="" class="dropdown-item">Gente que quizas conzcas</a>
+                  </li>
+                </ul>
+
+              </li>
+
+              <li class="nav-item">
+
+                <a class="nav-link dropdown-toggle p-1" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <ion-icon class="btn menu-icon" name="extension-puzzle-outline"></ion-icon>
+                </a>
+                <ul class="dropdown-menu" style="margin-left: 85%;">
+                  <li>
+                    <a href="" class="dropdown-item">Mas populares</a>
+                  </li>
+                  <li>
+                    <a href="" class="dropdown-item">Proximos</a>
+                  </li>
+                </ul>
+
+              </li>
+
+            </ul>
+
+          </nav>
+
+        </div>
+        <div class="ps-0 col-4 col-lg-3 d-flex align-items-center flex-row-reverse">
+          <ion-icon class="p-2 rounded-circle" name="caret-down-outline"></ion-icon>
+          <img class="hd-img me-1 p-1 rounded-circle" src="./img/bell.png" alt="notificacion-logo"
+            style="background-color: #dddddd;">
+          <img class="hd-img me-1 p-1 rounded-circle" src="./img/mensajero.png" alt="Ms-Logo"
+            style="background-color: #dddddd;">
+          <ion-icon class="me-1 p-1 rounded-circle d-none d-sm-block" name="apps"></ion-icon>
+          <div class="d-flex flex-row align-items-center me-2">
+            <img class="me-1 rounded-circle d-none d-lg-block" src="./img/noSeQuePonerNoTengoEsaImagenXD.jpg" alt="noSe"
+              height="25px">
+            <p class="mb-0 d-none d-lg-block fs-6 fw-bolder ">Eduardo</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+
+  <main class="container-fluid" style="height: 90%;">
+
+    <div class="row" style="height: 100%;">
+
+      <!-- COLUMNDA IZQUIERDA -->
+
+      <div class="d-none d-lg-block col-md-4 col-lg-3 p-1 accordion" style="height: 100%;">
+
+        <div class="p-0 bg-transparent d-flex flex-row accordion-item-center accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          <img class="menu-img" src="./img/menuIzq/amig.png" alt="">
+          <div>
+            <p class="m-0 fw-bolder align-items-center">Amigos</p>
+            <li class="blue fw-bolder">1 solicitud</li>
+          </div>
+        </div>
+
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <ul class="list-group">
+              <li class="list-group-item">Lista de amigos</li>
+              <li class="list-group-item">Solicitudes de amistad</li>
+              <li class="list-group-item">Personas que quizas conozcas</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="p-0 bg-transparent d-flex flex-row align-items-center accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+          <img class="menu-img" src="./img/menuIzq/group.png" alt="">
+          <div>
+            <p class="m-0 fw-bolder">Grupos</p>
+          </div>
+        </div>
+
+        <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <ul class="list-group">
+              <li class="list-group-item">Lista de Grupos</li>
+              <li class="list-group-item">Grupos Administrados</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="p-0 bg-transparent d-flex flex-row align-items-center accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+          <img class="menu-img" src="./img/menuIzq/marketPl.png" alt="">
+          <div>
+            <p class="m-0 fw-bolder">Marketplace</p>
+          </div>
+        </div>
+
+        <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <ul class="list-group">
+              <li class="list-group-item">Ofertas</li>
+              <li class="list-group-item">Ventas</li>
+              <li class="list-group-item">Carrito</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="p-0 bg-transparent d-flex flex-row align-items-center accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+          <img class="menu-img" src="./img/menuIzq/v1deos.png" alt="">
+          <div>
+            <p class="m-0 fw-bolder">Watch</p>
+            <li class="blue fw-bolder">+9 videos nuevos</li>
+          </div>
+        </div>
+
+        <div id="collapseFour" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <ul class="list-group">
+              <li class="list-group-item">Mas Recientes</li>
+              <li class="list-group-item">Mas Populares</li>
+              <li class="list-group-item">Amigos</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="p-0 bg-transparent d-flex flex-row align-items-center accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFifth" aria-expanded="true" aria-controls="collapseFifth">
+          <img class="menu-img" src="./img/menuIzq/recuerdos.png" alt="">
+          <div>
+            <p class="m-0 fw-bolder">Recuerdos</p>
+          </div>
+        </div>
+
+        <div id="collapseFifth" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <ul class="list-group">
+              <li class="list-group-item">Publicaciones</li>
+              <li class="list-group-item">Con Amigos</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="p-0 bg-transparent d-flex flex-row align-items-center accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+          <img class="menu-img" src="./img/menuIzq/guardados.png" alt="">
+          <div>
+            <p class="m-0 fw-bolder">Guardados</p>
+          </div>
+        </div>
+
+        <div id="collapseSix" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <ul class="list-group">
+              <li class="list-group-item">Recientes</li>
+              <li class="list-group-item">Favoritos</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="p-0 bg-transparent d-flex flex-row align-items-center accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSev" aria-expanded="true" aria-controls="collapseSev">
+          <img class="menu-img" src="./img/menuIzq/paginas.png" alt="">
+          <div>
+            <p class="m-0 fw-bolder">Paginas</p>
+            <li class="blue fw-bolder">+9 actualizaciones</li>
+          </div>
+        </div>
+
+        <div id="collapseSev" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <ul class="list-group">
+              <li class="list-group-item">Programing Memes</li>
+              <li class="list-group-item">JS Esp</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="p-0 bg-transparent d-flex flex-row align-items-center accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEi" aria-expanded="true" aria-controls="collapseEi">
+          <img class="menu-img" src="./img/menuIzq/eventos.png" alt="">
+          <p class="m-0 fw-bolder">Eventos</p>
+        </div>
+
+        <div id="collapseEi" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <ul class="list-group">
+              <li class="list-group-item">No hay eventos programados</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="p-0 bg-transparent d-flex flex-row align-items-center accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="true" aria-controls="collapseNine">
+          <ion-icon class="rounded-circle ms-2 my-1" name="chevron-down-outline" style="background-color: #afafaf;">
+          </ion-icon>
+          <p class="m-2 fw-bolder">Ver Mas</p>
+        </div>
+
+        <div id="collapseNine" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <ul class="list-group">
+              <li class="list-group-item">No hay mas...</li>
+            </ul>
+          </div>
+        </div>
+
+        <hr>
+        <div class="m-2 rounded-2" style="height: 68.5%; background-color: white;"></div>
+      </div>
+
+      <!-- COLUMNDA DEL MEDIO -->
+
+      <div class="col-12 col-md-8 col-lg-6" style="height: 100%;">
+
+        <!-- CARRUSEL -->
+
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="m-2 p-0 rounded-2 col img-historia d-flex align-items-end"
+                  style="background-image: url(./img/noSeQuePonerNoTengoEsaImagenXD.jpg);" data-bs-toggle="modal" data-bs-target="#imgCrea">
+
+                  <div class="h-50 p-0 container-fluid rounded-bottom">
+
+                    <div class="h-50 container-fluid d-flex align-items-end justify-content-center">
+                      <ion-icon class="rounded-circle border border-white bg-primary border-3" name="add-outline"
+                        style="display: inline; position: relative; top: 25%; color: #ffffff;"></ion-icon>
+                    </div>
+                    <div class="h-50 bg-light container-fluid rounded-bottom d-flex align-items-end">
+                      <p class="fw-bold crear-historia-txt m-0 text-center">Crear una historia</p>
+                    </div>
+
+                  </div>
+
+                </div>
+                <div class="m-2 p-0 rounded-2 col img-historia" style="background-image: url(./img/ast.jpg);"
+                  data-bs-toggle="modal" data-bs-target="#img1">
+                  <div class="h-50">
+                    <img class="foto-perfil" src="./img/feo.jpg" alt="">
+                  </div>
+                  <div class="h-50 p-1 d-flex align-items-end">
+                    <p class="m-0 fw-bold" style="color: white;">Jose Aguirre</p>
+                  </div>
+                </div>
+                <div class="m-2 p-0 rounded-2 col img-historia" style="background-image: url(./img/rei.jpg);" data-bs-toggle="modal" data-bs-target="#img2">
+                  <div class="h-50">
+                    <img class="foto-perfil" src="./img/esq.jpg" alt="">
+                  </div>
+                  <div class="h-50 p-1 d-flex align-items-end">
+                    <p class="m-0 fw-bold" style="color: white;">Juan Alvarado</p>
+                  </div>
+                </div>
+                <div class="m-2 p-0 rounded-2 col img-historia" style="background-image: url(./img/gettinhot.jpg);" data-bs-toggle="modal" data-bs-target="#img3">
+                  <div class="h-50">
+                    <img class="foto-perfil" src="./img/ye.jpeg" alt="">
+                  </div>
+                  <div class="h-50 p-1 d-flex align-items-end">
+                    <p class="m-0 fw-bold" style="color: white;">Mariele Alvarado</p>
+                  </div>
+                </div>
+                <div class="m-2 p-0 rounded-2 col img-historia" style="background-image: url(./img/DonnieDarko.jpg);" data-bs-toggle="modal" data-bs-target="#img4">
+                  <div class="h-50">
+                    <img class="foto-perfil" src="./img/angryCat.jpg" alt="">
+                  </div>
+                  <div class="h-50 p-1 d-flex align-items-end">
+                    <p class="m-0 fw-bold" style="color: white;">Armando Casas</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+
+                <div class="m-2 p-0 rounded-2 col img-historia" style="background-image: url(./img/blackcat.jpg);" data-bs-toggle="modal" data-bs-target="#img5">
+                  <div class="h-50">
+                    <img class="foto-perfil" src="./img/elBichoSiuuu.jpg" alt="">
+                  </div>
+                  <div class="h-50 p-1 d-flex align-items-end">
+                    <p class="m-0 fw-bold" style="color: white;">Angel Piña</p>
+                  </div>
+                </div>
+                <div class="m-2 p-0 rounded-2 col img-historia" style="background-image: url(./img/selfieCat.jpg);" data-bs-toggle="modal" data-bs-target="#img6">
+                  <div class="h-50">
+                    <img class="foto-perfil" src="./img/gatoFachero.jpg" alt="">
+                  </div>
+                  <div class="h-50 p-1 d-flex align-items-end">
+                    <p class="m-0 fw-bold" style="color: white;">Andrian Arangure</p>
+                  </div>
+                </div>
+                <div class="m-2 p-0 rounded-2 col img-historia" style="background-image: url(./img/TikTok.jpg);" data-bs-toggle="modal" data-bs-target="#img7">
+                  <div class="h-50">
+                    <img class="foto-perfil" src="./img/silvia.jpg" alt="">
+                  </div>
+                  <div class="h-50 p-1 d-flex align-items-end">
+                    <p class="m-0 fw-bold" style="color: white;">Silvia Fernanda</p>
+                  </div>
+                </div>
+                <div class="m-2 p-0 rounded-2 col img-historia" style="background-image: url(./img/shrek.jpg);" data-bs-toggle="modal" data-bs-target="#img8">
+                  <div class="h-50">
+                    <img class="foto-perfil" src="./img/boxAngry.jpg" alt="">
+                  </div>
+                  <div class="h-50 p-1 d-flex align-items-end">
+                    <p class="m-0 fw-bold" style="color: white;">Eurick Ospino</p>
+                  </div>
+                </div>
+                <div class="m-2 p-0 rounded-2 col img-historia" style="background-image: url(./img/auto.jpg);" data-bs-toggle="modal" data-bs-target="#img9">
+                  <div class="h-50">
+                    <img class="foto-perfil" src="./img/FTW.jpg" alt="">
+                  </div>
+                  <div class="h-50 p-1 d-flex align-items-end">
+                    <p class="m-0 fw-bold" style="color: white;">Elvis Tech</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="m-2 p-0 rounded-2 col img-historia" style="background-image: url(./img/Ju.jpg);" data-bs-toggle="modal" data-bs-target="#img10">
+                  <div class="h-50">
+                    <img class="foto-perfil" src="./img/Ju.jpg" alt="">
+                  </div>
+                  <div class="h-50 p-1 d-flex align-items-end">
+                    <p class="m-0 fw-bold" style="color: white;">Juana Paola</p>
+                  </div>
+                </div>
+                <div class="m-2 p-0 rounded-2 col img-historia" style="background-image: url(./img/ram.jpg);" data-bs-toggle="modal" data-bs-target="#img11">
+                  <div class="h-50">
+                    <img class="foto-perfil" src="./img/chiguire.jpg" alt="">
+                  </div>
+                  <div class="h-50 p-1 d-flex align-items-end">
+                    <p class="m-0 fw-bold" style="color: white;">Ramses Alvarez</p>
+                  </div>
+                </div>
+                <div class="m-2 p-0 rounded-2 col img-historia" style="background-image: url(./img/reflexion.jpg);" data-bs-toggle="modal" data-bs-target="#img12">
+                  <div class="h-50">
+                    <img class="foto-perfil" src="./img/bruh.jpg" alt="">
+                  </div>
+                  <div class="h-50 p-1 d-flex align-items-end">
+                    <p class="m-0 fw-bold" style="color: white;">Victor Rebolledo</p>
+                  </div>
+                </div>
+                <div class="m-2 p-0 rounded-2 col img-historia" style="background-image: url(./img/catFacha2.jpg);" data-bs-toggle="modal" data-bs-target="#img13">
+                  <div class="h-50">
+                    <img class="foto-perfil" src="./img/skeleton.jpg" alt="">
+                  </div>
+                  <div class="h-50 p-1 d-flex align-items-end">
+                    <p class="m-0 fw-bold" style="color: white;">Juan Pablo Rodriguez</p>
+                  </div>
+                </div>
+                <div class="m-2 p-0 rounded-2 col img-historia" style="background-image: url(./img/a.jpg);" data-bs-toggle="modal" data-bs-target="#img14">
+                  <div class="h-50">
+                    <img class="foto-perfil" src="./img/xd.jpg" alt="">
+                  </div>
+                  <div class="h-50 p-1 d-flex align-items-end">
+                    <p class="m-0 fw-bold" style="color: white;">Amanda Gil</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <!-- MODAL -->
+
+        <div class="modal fade" id="imgCrea" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Crear historia</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                crea una historia
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Subir</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="img1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Jose Aguirre</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="./img/ast.jpg" alt="historia 1" style="width: 100%;">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Like</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="img2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Juan Alvarado</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="./img/rei.jpg" alt="historia 2" style="width: 100%;">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Like</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="img3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Mariele Alvarado</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="./img/gettinhot.jpg" alt="historia 3" style="width: 100%;">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Like</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="img4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Armando Casas</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="./img/DonnieDarko.jpg" alt="historia 4" style="width: 100%;">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Like</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="img5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Angle Piña</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="./img/blackcat.jpg" alt="historia 5" style="width: 100%;">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Like</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="img6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Andrian Arangure</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="./img/selfieCat.jpg" alt="historia 6" style="width: 100%;">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Like</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="img7" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Silvia Fernanda Orellana</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="./img/TikTok.jpg" alt="historia 7" style="width: 100%;">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Like</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="img8" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Eurick Ospino</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="./img/shrek.jpg" alt="historia 8" style="width: 100%;">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Like</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="img9" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Elvis Tech</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="./img/auto.jpg" alt="historia 9" style="width: 100%;">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Like</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="img10" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Juana Paola</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="./img/Ju.jpg" alt="historia 10" style="width: 100%;">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Like</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="img11" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Ramses Alvarez</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="./img/ram.jpg" alt="historia 11" style="width: 100%;">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Like</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="img12" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Victor Rebolledo</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="./img/reflexion.jpg" alt="historia 12" style="width: 100%;">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Like</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="img13" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Juan Pablo Rodriguez</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="./img/catFacha2.jpg" alt="historia 1" style="width: 100%;">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Like</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="img14" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Amanda Gil</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="./img/a.jpg" alt="historia 1" style="width: 100%;">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Like</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD -->
+
+        <div class="card mx-2 rounded-2 text-center" style="background-color: white;">
+
+          <div class="card-header">
+            <div class="d-flex justify-content-between">
+              <div class="d-flex flex-row">
+                <img class="rounded-circle" src="./img/feo.jpg" alt="perfil-publicacion"
+                  style="height: 45px; width: 45px; object-fit: cover;">
+                <div>
+                  <p id="public-nombre" class="m-0 mx-1 fw-bold">Jose Alfredo Aguirre</p>
+                  <div class="d-flex flex-row align-items-center">
+                    <p id="public-fecha" class="m-0 mx-1" style="text-align: start;">27 de agosto</p>
+                    <ion-icon class="bg-light" name="people-circle-outline" style="height: 20px;"></ion-icon>
+                  </div>
+                </div>
+              </div>
+              <ion-icon name="ellipsis-horizontal" style="height: 4vh;background-color: transparent;"></ion-icon>
+            </div>
+            <p class="m-0 my-1 text-start">Yo:</p>
+          </div>
+          <div class="card-body">
+            <img src="./img/laProgramacionEsMiPasion.jpg" alt="publicacion" style="width: 100%;">
+          </div>
+
+          <div class="card-footer text-muted">
+
+            <div class="d-flex flex-row align-items-center">
+
+              <img src="./img/like.svg" alt="like" style="height: 20px;">
+
+              <p class="m-0 ms-1">Juan Pablo Rodriguez</p>
+
+            </div>
+
+            <div class="card-footer">
+
+              <div class="d-flex justify-content-between">
+
+                <div>
+                  <img src="./img/thumbs-up.svg" alt="Me-Gusta">
+                  <span class="d-none d-md-inline">Me Gusta</span>
+                </div>
+
+                <div>
+                  <img src="./img/message-square.svg" alt="Me-Gusta">
+                  <span class="d-none d-md-inline">Comentar</span>
+                </div>
+
+                <div>
+                  <img src="./img/share-2.svg" alt="Compartir">
+                  <span class="d-none d-md-inline">Compartir</span>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="card-footer d-flex justify-content-between align-items-center py-2 px-1">
+
+              <img id="coment-foto" class="rounded-circle" src="./img/noSeQuePonerNoTengoEsaImagenXD.jpg" alt="perfil-publicacion">
+
+              <input class="form-control rounded" type="search" placeholder="Buscar en Facebook" aria-label="Search"
+                style="border: transparent; background-color: #dddddd;">
+
+              <ion-icon class="bg-transparent mx-1" name="happy-outline"></ion-icon>
+
+              <ion-icon class="bg-transparent mx-1" name="camera-outline"></ion-icon>
+
+              <ion-icon class="bg-transparent mx-1" name="image-outline"></ion-icon>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- FORMULARIO -->
+
+        <div class="my-4 mx-2 rounded-2" style="background-color: white; text-align: center;">
+
+          <form class="row g-3 m-2 needs-validation" novalidate>
+
+            <div class="m-2 d-flex flex-row align-items-center">
+              <label for="exampleInputName" class="form-label me-1">Nombre:</label>
+              <input type="text" class="form-control" id="exampleInputName" aria-describedby="nameHelp" required>
+            </div>
+
+            <div class="m-2 d-flex flex-row align-items-center">
+              <label for="exampleInputName" class="form-label me-1">Contraseña:</label>
+              <input type="password" class="form-control " id="exampleInputName" aria-describedby="nameHelp" required>
+            </div>
+
+            <div class="m-2 d-flex flex-row align-items-center">
+              <label for="exampleInputName" class="form-label me-1">Correo:</label>
+              <input type="email" class="form-control" id="exampleInputName" aria-describedby="nameHelp" required>
+            </div>
+
+            <div class="form-check-inline m-2">
+              <input type="checkbox" class="form-check-input" id="exampleCheck">
+              <label class="form-check-label" for="exampleCheck" required>Acepta los terminos y condiciones</label>
+            </div>
+
+            <div class="d-flex flex-center justify-content-center">
+
+              <button type="submit" class="btn btn-success mx-2">Aceptar</button>
+              <button type="reset" class="btn btn-danger">Canelar</button>
+
+            </div>
+
+          </form>
+
+        </div>
+
+      </div>
+
+      <!-- COLUMNA DERECHA -->
+
+      <div class="d-none d-md-block col-md-4 col-lg-3" style="height: 100%;">
+
+        <div class="rounded-2 my-1 px-1" style="background-color: white;">
+
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex flex-row align-items-center">
+              <img class="me-2" src="./img/menuIzq/amig.png" alt="">
+              <p class="m-0 fw-bolder soli-txt">Solicitudes de amistad</p>
+            </div>
+            <ion-icon name="ellipsis-horizontal" style="height: 4vh;background-color: transparent;"></ion-icon>
+          </div>
+
+          <div class="d-flex flex-row p-1 my-3">
+            <img class="rounded-circle my-1 imgSolicAmig" src="./img/Morty.jpg">
+            <div class="container-fluid my-1">
+              <div class="d-flex justify-content-between">
+                <div>
+                  <p class="m-0 fw-bolder soli-txt">Gender Mejia</p>
+                </div>
+                <div class="d-flex flex-row align-items-center">
+                  <p class="m-0 soli-txt">1 sem</p>
+                  <ion-icon name="ellipse" style="height: 2vh;background-color: transparent;"></ion-icon>
+                </div>
+              </div>
+              <div class="d-flex flex-row align-items-center my-1">
+                <div>
+                  <img class="rounded-circle amig-Comun" src="./img/esq.jpg" alt=""
+                    style="display: inline; position: relative;">
+                  <img class="rounded-circle amig-Comun" src="./img/feo.jpg" alt=""
+                    style="display: inline; position: relative; z-index: -100px; left: -10px;">
+                </div>
+                <p class="m-0 soli-txt" style="color: #8f8f8f;">10 Amigos en comun</p>
+              </div>
+
+              <div class="my-1 d-flex justify-content-center pe-2 flex-nowrap">
+                <button type="button" class="fw-bold btn btn-primary btn-sm" data-bs-toggle="collapse" href="#ahoraSonAmigos" role="button" aria-expanded="false" aria-controls="ahoraSonAmigos">Confirmar</button>
+                <button type="button" class="fw-bold btn btn-secondary btn-sm ms-1"
+                  style="color: rgb(194, 194, 194);" data-bs-toggle="collapse" href="#eliminado" role="button" aria-expanded="false" aria-controls="eliminado">Eliminar</button>
+              </div>
+
+              <div class="collapse" id="ahoraSonAmigos">
+                <div class="card card-body">
+                  Ahora son amigos!!!
+                </div>
+              </div>
+
+              <div class="collapse" id="eliminado">
+                <div class="card card-body">
+                  Eliminado
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="my-3" style="height: 60%;">
+
+          <hr>
+
+          <div class="d-flex flex-row align-items-center" style="height: 50%;">
+
+            <img class="rounded-2" src="./img/cyber1.jpg" alt="" style="height: 20vh; width: 20vh;">
+
+            <div>
+              <p class="public-txt m-2 fw-bold">Fast, Reliable & Cheap <br>
+                Managed Cloud Web <br>
+                Hosting Service - ...</p>
+              <p class="public-txt m-2">www.interserver.net</p>
+            </div>
+
+          </div>
+
+          <div class="d-flex flex-row align-items-center" style="height: 50%;">
+
+            <img class="rounded-2" src="./img/dev.png" alt="" style="height: 20vh; width: 20vh;">
+
+            <div>
+              <p class="public-txt m-2 fw-bold">FlatWorld.Co</p>
+              <p class="public-txt m-2">jobs.flatworld.co</p>
+            </div>
+
+          </div>
+
+          <hr>
+
+          <div class="m-2 rounded-2" style="height:77.5%; background-color: white;"></div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
