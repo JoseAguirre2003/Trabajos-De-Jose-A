@@ -1,0 +1,8 @@
+C:\Users\Vladi1000\Desktop\Tareas\Semestre II\Programacion I\Programas C# tem 6\ValidarCorreo\bin\Debug\ValidarCorreo.exe.config
+C:\Users\Vladi1000\Desktop\Tareas\Semestre II\Programacion I\Programas C# tem 6\ValidarCorreo\bin\Debug\ValidarCorreo.exe
+C:\Users\Vladi1000\Desktop\Tareas\Semestre II\Programacion I\Programas C# tem 6\ValidarCorreo\bin\Debug\ValidarCorreo.pdb
+C:\Users\Vladi1000\Desktop\Tareas\Semestre II\Programacion I\Programas C# tem 6\ValidarCorreo\obj\Debug\ValidarCorreo.csprojResolveAssemblyReference.cache
+C:\Users\Vladi1000\Desktop\Tareas\Semestre II\Programacion I\Programas C# tem 6\ValidarCorreo\obj\Debug\ValidarCorreo.MainForm.resources
+C:\Users\Vladi1000\Desktop\Tareas\Semestre II\Programacion I\Programas C# tem 6\ValidarCorreo\obj\Debug\ValidarCorreo.csproj.GenerateResource.Cache
+C:\Users\Vladi1000\Desktop\Tareas\Semestre II\Programacion I\Programas C# tem 6\ValidarCorreo\obj\Debug\ValidarCorreo.exe
+C:\Users\Vladi1000\Desktop\Tareas\Semestre II\Programacion I\Programas C# tem 6\ValidarCorreo\obj\Debug\ValidarCorreo.pdb
