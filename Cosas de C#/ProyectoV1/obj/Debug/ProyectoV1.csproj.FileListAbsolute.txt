@@ -1,0 +1,3 @@
+C:\Users\Vladi1000\Desktop\Tareas\Semestre II\Programacion I\ProyectoV1\obj\Debug\ProyectoV1.csprojResolveAssemblyReference.cache
+C:\Users\Vladi1000\Desktop\Tareas\Semestre II\Programacion I\ProyectoV1\obj\Debug\ProyectoV1.MainForm.resources
+C:\Users\Vladi1000\Desktop\Tareas\Semestre II\Programacion I\ProyectoV1\obj\Debug\ProyectoV1.csproj.GenerateResource.Cache
