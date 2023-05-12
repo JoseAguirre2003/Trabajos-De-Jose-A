@@ -16,8 +16,8 @@ namespace ProyectoV1
 		private System.ComponentModel.IContainer components = null;
 		private System.Windows.Forms.Label lbGedtionDVD;
 		private System.Windows.Forms.Label lblCodigo;
-		private System.Windows.Forms.TextBox textBox1;
-		private System.Windows.Forms.TextBox textBox2;
+		private System.Windows.Forms.TextBox txtCode;
+		private System.Windows.Forms.TextBox txtTitle;
 		private System.Windows.Forms.Label lblTitulo;
 		private System.Windows.Forms.Label lblFabric;
 		private System.Windows.Forms.DateTimePicker datePickerFabric;
@@ -26,10 +26,10 @@ namespace ProyectoV1
 		private System.Windows.Forms.RadioButton radioButton2;
 		private System.Windows.Forms.RadioButton radioButton1;
 		private System.Windows.Forms.Label lblDescrip;
-		private System.Windows.Forms.RichTextBox richTextBox1;
+		private System.Windows.Forms.RichTextBox richTxtDescrip;
 		private System.Windows.Forms.PictureBox pictureBox1;
 		private System.Windows.Forms.Label lblCant;
-		private System.Windows.Forms.NumericUpDown numericUpDown;
+		private System.Windows.Forms.NumericUpDown numericUpCantidad;
 		private System.Windows.Forms.DateTimePicker datePickerIngres;
 		private System.Windows.Forms.Label lblIngreso;
 		private System.Windows.Forms.Button btnBuscar;
@@ -37,7 +37,7 @@ namespace ProyectoV1
 		private System.Windows.Forms.Button btnEliminar;
 		private System.Windows.Forms.Button btnRegist;
 		private System.Windows.Forms.Button btnBuscarImg;
-		private System.Windows.Forms.TextBox textBox3;
+		private System.Windows.Forms.TextBox txtRuta;
 		private System.Windows.Forms.Button btnCerrar;
 		
 		/// <summary>
@@ -63,18 +63,18 @@ namespace ProyectoV1
 		{
 			this.lbGedtionDVD = new System.Windows.Forms.Label();
 			this.lblCodigo = new System.Windows.Forms.Label();
-			this.textBox1 = new System.Windows.Forms.TextBox();
-			this.textBox2 = new System.Windows.Forms.TextBox();
+			this.txtCode = new System.Windows.Forms.TextBox();
+			this.txtTitle = new System.Windows.Forms.TextBox();
 			this.lblTitulo = new System.Windows.Forms.Label();
 			this.grupBoxTypeDVD = new System.Windows.Forms.GroupBox();
 			this.radioButton3 = new System.Windows.Forms.RadioButton();
 			this.radioButton2 = new System.Windows.Forms.RadioButton();
 			this.radioButton1 = new System.Windows.Forms.RadioButton();
 			this.lblDescrip = new System.Windows.Forms.Label();
-			this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+			this.richTxtDescrip = new System.Windows.Forms.RichTextBox();
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.lblCant = new System.Windows.Forms.Label();
-			this.numericUpDown = new System.Windows.Forms.NumericUpDown();
+			this.numericUpCantidad = new System.Windows.Forms.NumericUpDown();
 			this.lblFabric = new System.Windows.Forms.Label();
 			this.datePickerFabric = new System.Windows.Forms.DateTimePicker();
 			this.datePickerIngres = new System.Windows.Forms.DateTimePicker();
@@ -84,11 +84,11 @@ namespace ProyectoV1
 			this.btnEliminar = new System.Windows.Forms.Button();
 			this.btnRegist = new System.Windows.Forms.Button();
 			this.btnBuscarImg = new System.Windows.Forms.Button();
-			this.textBox3 = new System.Windows.Forms.TextBox();
+			this.txtRuta = new System.Windows.Forms.TextBox();
 			this.btnCerrar = new System.Windows.Forms.Button();
 			this.grupBoxTypeDVD.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.numericUpCantidad)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// lbGedtionDVD
@@ -108,19 +108,19 @@ namespace ProyectoV1
 			this.lblCodigo.TabIndex = 1;
 			this.lblCodigo.Text = "Codigo: ";
 			// 
-			// textBox1
+			// txtCode
 			// 
-			this.textBox1.Location = new System.Drawing.Point(86, 44);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(181, 20);
-			this.textBox1.TabIndex = 2;
+			this.txtCode.Location = new System.Drawing.Point(86, 44);
+			this.txtCode.Name = "txtCode";
+			this.txtCode.Size = new System.Drawing.Size(181, 20);
+			this.txtCode.TabIndex = 2;
 			// 
-			// textBox2
+			// txtTitle
 			// 
-			this.textBox2.Location = new System.Drawing.Point(86, 70);
-			this.textBox2.Name = "textBox2";
-			this.textBox2.Size = new System.Drawing.Size(181, 20);
-			this.textBox2.TabIndex = 4;
+			this.txtTitle.Location = new System.Drawing.Point(86, 70);
+			this.txtTitle.Name = "txtTitle";
+			this.txtTitle.Size = new System.Drawing.Size(181, 20);
+			this.txtTitle.TabIndex = 4;
 			// 
 			// lblTitulo
 			// 
@@ -180,17 +180,18 @@ namespace ProyectoV1
 			this.lblDescrip.TabIndex = 9;
 			this.lblDescrip.Text = "Descripcion: ";
 			// 
-			// richTextBox1
+			// richTxtDescrip
 			// 
-			this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.richTextBox1.Location = new System.Drawing.Point(22, 253);
-			this.richTextBox1.Name = "richTextBox1";
-			this.richTextBox1.Size = new System.Drawing.Size(245, 96);
-			this.richTextBox1.TabIndex = 10;
-			this.richTextBox1.Text = "";
+			this.richTxtDescrip.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.richTxtDescrip.Location = new System.Drawing.Point(22, 253);
+			this.richTxtDescrip.Name = "richTxtDescrip";
+			this.richTxtDescrip.Size = new System.Drawing.Size(245, 96);
+			this.richTxtDescrip.TabIndex = 10;
+			this.richTxtDescrip.Text = "";
 			// 
 			// pictureBox1
 			// 
+			this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
 			this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.pictureBox1.Location = new System.Drawing.Point(293, 79);
 			this.pictureBox1.Name = "pictureBox1";
@@ -206,17 +207,17 @@ namespace ProyectoV1
 			this.lblCant.TabIndex = 12;
 			this.lblCant.Text = "Cantidad: ";
 			// 
-			// numericUpDown
+			// numericUpCantidad
 			// 
-			this.numericUpDown.Location = new System.Drawing.Point(86, 358);
-			this.numericUpDown.Maximum = new decimal(new int[] {
+			this.numericUpCantidad.Location = new System.Drawing.Point(86, 358);
+			this.numericUpCantidad.Maximum = new decimal(new int[] {
 			1000,
 			0,
 			0,
 			0});
-			this.numericUpDown.Name = "numericUpDown";
-			this.numericUpDown.Size = new System.Drawing.Size(181, 20);
-			this.numericUpDown.TabIndex = 14;
+			this.numericUpCantidad.Name = "numericUpCantidad";
+			this.numericUpCantidad.Size = new System.Drawing.Size(181, 20);
+			this.numericUpCantidad.TabIndex = 14;
 			// 
 			// lblFabric
 			// 
@@ -228,6 +229,7 @@ namespace ProyectoV1
 			// 
 			// datePickerFabric
 			// 
+			this.datePickerFabric.Format = System.Windows.Forms.DateTimePickerFormat.Short;
 			this.datePickerFabric.Location = new System.Drawing.Point(86, 96);
 			this.datePickerFabric.Name = "datePickerFabric";
 			this.datePickerFabric.Size = new System.Drawing.Size(181, 20);
@@ -235,6 +237,7 @@ namespace ProyectoV1
 			// 
 			// datePickerIngres
 			// 
+			this.datePickerIngres.Format = System.Windows.Forms.DateTimePickerFormat.Short;
 			this.datePickerIngres.Location = new System.Drawing.Point(86, 384);
 			this.datePickerIngres.Name = "datePickerIngres";
 			this.datePickerIngres.Size = new System.Drawing.Size(181, 20);
@@ -293,12 +296,12 @@ namespace ProyectoV1
 			this.btnBuscarImg.Text = "Buscar Imagen";
 			this.btnBuscarImg.UseVisualStyleBackColor = true;
 			// 
-			// textBox3
+			// txtRuta
 			// 
-			this.textBox3.Location = new System.Drawing.Point(293, 264);
-			this.textBox3.Name = "textBox3";
-			this.textBox3.Size = new System.Drawing.Size(150, 20);
-			this.textBox3.TabIndex = 22;
+			this.txtRuta.Location = new System.Drawing.Point(293, 264);
+			this.txtRuta.Name = "txtRuta";
+			this.txtRuta.Size = new System.Drawing.Size(150, 20);
+			this.txtRuta.TabIndex = 22;
 			// 
 			// btnCerrar
 			// 
@@ -313,9 +316,11 @@ namespace ProyectoV1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
 			this.ClientSize = new System.Drawing.Size(465, 421);
+			this.ControlBox = false;
 			this.Controls.Add(this.btnCerrar);
-			this.Controls.Add(this.textBox3);
+			this.Controls.Add(this.txtRuta);
 			this.Controls.Add(this.btnBuscarImg);
 			this.Controls.Add(this.btnRegist);
 			this.Controls.Add(this.btnEliminar);
@@ -323,24 +328,24 @@ namespace ProyectoV1
 			this.Controls.Add(this.btnBuscar);
 			this.Controls.Add(this.datePickerIngres);
 			this.Controls.Add(this.lblIngreso);
-			this.Controls.Add(this.numericUpDown);
+			this.Controls.Add(this.numericUpCantidad);
 			this.Controls.Add(this.lblCant);
 			this.Controls.Add(this.pictureBox1);
-			this.Controls.Add(this.richTextBox1);
+			this.Controls.Add(this.richTxtDescrip);
 			this.Controls.Add(this.lblDescrip);
 			this.Controls.Add(this.grupBoxTypeDVD);
 			this.Controls.Add(this.datePickerFabric);
 			this.Controls.Add(this.lblFabric);
-			this.Controls.Add(this.textBox2);
+			this.Controls.Add(this.txtTitle);
 			this.Controls.Add(this.lblTitulo);
-			this.Controls.Add(this.textBox1);
+			this.Controls.Add(this.txtCode);
 			this.Controls.Add(this.lblCodigo);
 			this.Controls.Add(this.lbGedtionDVD);
 			this.Name = "FormDVD";
-			this.Text = "FormDVD";
+			this.Text = "Modulo de control de DVD";
 			this.grupBoxTypeDVD.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.numericUpCantidad)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 

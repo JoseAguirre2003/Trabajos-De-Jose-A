@@ -7,7 +7,8 @@ namespace ProyectoV1.Classes
 	public class ColeccionDiscos
 	{
 		
-		List<DVD> coleccionDVD;
+		private List<DVD> coleccionDVD;
+		public List<DVD> _coleccionDVD {get {return coleccionDVD;} set {coleccionDVD = value;}}
 		
 		public ColeccionDiscos()
 		{
