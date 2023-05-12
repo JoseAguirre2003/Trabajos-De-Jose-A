@@ -1,3 +1,9 @@
 C:\Users\Vladi1000\Desktop\Tareas\Semestre II\Programacion I\ProyectoV1\obj\Debug\ProyectoV1.csprojResolveAssemblyReference.cache
 C:\Users\Vladi1000\Desktop\Tareas\Semestre II\Programacion I\ProyectoV1\obj\Debug\ProyectoV1.MainForm.resources
 C:\Users\Vladi1000\Desktop\Tareas\Semestre II\Programacion I\ProyectoV1\obj\Debug\ProyectoV1.csproj.GenerateResource.Cache
+C:\Users\Vladi1000\Desktop\Tareas\Semestre II\Programacion I\ProyectoV1\obj\Debug\ProyectoV1.FormDVD.resources
+C:\Users\Vladi1000\Desktop\Tareas\Semestre II\Programacion I\ProyectoV1\bin\Debug\ProyectoV1.exe.config
+C:\Users\Vladi1000\Desktop\Tareas\Semestre II\Programacion I\ProyectoV1\bin\Debug\ProyectoV1.exe
+C:\Users\Vladi1000\Desktop\Tareas\Semestre II\Programacion I\ProyectoV1\bin\Debug\ProyectoV1.pdb
+C:\Users\Vladi1000\Desktop\Tareas\Semestre II\Programacion I\ProyectoV1\obj\Debug\ProyectoV1.exe
+C:\Users\Vladi1000\Desktop\Tareas\Semestre II\Programacion I\ProyectoV1\obj\Debug\ProyectoV1.pdb

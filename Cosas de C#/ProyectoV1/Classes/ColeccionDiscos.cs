@@ -14,8 +14,8 @@ namespace ProyectoV1.Classes
 			coleccionDVD = new List<DVD>();
 		}
 		
-		public void Agregar(String code, String title, DateTime manuDate, String type, String descript, Int16 amount, DateTime adDate, string imgPath){	
-			DVD dvd = new DVD(code, title, manuDate, type, descript, amount, adDate, imgPath);
+		public void Agregar(String code, String title, DateTime fabricDate, String type, String descrip, Int16 cantidad, DateTime ingresDate, string imgRuta){	
+			DVD dvd = new DVD(code, title, fabricDate, type, descrip, cantidad, ingresDate, imgRuta);
 			coleccionDVD.Add(dvd);
 		}
 		
@@ -32,20 +32,24 @@ namespace ProyectoV1.Classes
 			return posicion;
 		}
 		
-		public void Actualizar(string code){
+		public void Actualizar(String code, String title, DateTime fabricDate, String type, String descrip, Int16 cantidad, DateTime ingresDate, string imgRuta){
 			Int16 posicion = Buscar(code);
-			coleccionDVD[posicion]._code;
-			coleccionDVD[posicion]._title;
-			coleccionDVD[posicion]._manuDate;
-			coleccionDVD[posicion]._type;
-			coleccionDVD[posicion]._descript;
-			coleccionDVD[posicion]._amount;
-			coleccionDVD[posicion]._adDate;
-			coleccionDVD[posicion]._imgPath;
+			coleccionDVD[posicion]._title = title;
+			coleccionDVD[posicion]._fabricDate = fabricDate;
+			coleccionDVD[posicion]._type = type;
+			coleccionDVD[posicion]._descrip = descrip;
+			coleccionDVD[posicion]._cantidad = cantidad;
+			coleccionDVD[posicion]._ingresDate = ingresDate;
+			coleccionDVD[posicion]._imgRuta = imgRuta;
 		}
 		
-//		public bool Eliminar(){
-//			return false;
-//		}
+		public bool Eliminar(string code){
+			Int16 puesto = Buscar(code);
+			if(puesto > -1){
+				coleccionDVD.RemoveAt(puesto);
+				return true;
+			}
+			return false;
+		}	
 	}
 }

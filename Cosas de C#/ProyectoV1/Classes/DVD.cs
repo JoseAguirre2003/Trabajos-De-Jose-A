@@ -6,31 +6,31 @@ namespace ProyectoV1.Classes
 	{	
 		private String code;
 		private String title;
-		private DateTime manuDate;
+		private DateTime fabricDate;
 		private String type;
-		private String descript;		
-		private Int16 amount;
-		private DateTime adDate;
-		private string imgPath;
+		private String descrip;		
+		private Int16 cantidad;
+		private DateTime ingresDate;
+		private string imgRuta;
 		
 		public String _code {get {return code;} set {code = value;}}
 		public String _title {get {return title;} set {title = value;}}
-		public DateTime _manuDate {get {return manuDate;} set {manuDate = value;}}
+		public DateTime _fabricDate {get {return fabricDate;} set {fabricDate = value;}}
 		public String _type {get {return type;} set {type = value;}}
-		public String _descript {get {return descript;} set {descript = value;}}
-		public Int16 _amount {get {return amount;} set {amount = value;}}
-		public DateTime _adDate {get {return adDate;} set {adDate = value;}}
-		public string _imgPath {get {return imgPath;} set {imgPath = value;}}
+		public String _descrip {get {return descrip;} set {descrip = value;}}
+		public Int16 _cantidad {get {return cantidad;} set {cantidad = value;}}
+		public DateTime _ingresDate {get {return ingresDate;} set {ingresDate = value;}}
+		public string _imgRuta {get {return imgRuta;} set {imgRuta = value;}}
 		
-		public DVD(String code, String title, DateTime manuDate, String type, String descript, Int16 amount, DateTime adDate, string imgPath){	
+		public DVD(String code, String title, DateTime fabricDate, String type, String descrip, Int16 cantidad, DateTime ingresDate, string imgRuta){	
 			this.code = code;
 			this.title = title;
-			this.manuDate = manuDate;
+			this.fabricDate = fabricDate;
 			this.type = type;
-			this.descript = descript;
-			this.amount = amount;
-			this.adDate = adDate;
-			this.imgPath = imgPath;
+			this.descrip = descrip;
+			this.cantidad = cantidad;
+			this.ingresDate = ingresDate;
+			this.imgRuta = imgRuta;
 		}
 	}
 }
