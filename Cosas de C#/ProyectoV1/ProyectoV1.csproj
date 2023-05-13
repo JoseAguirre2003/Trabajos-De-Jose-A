@@ -51,8 +51,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Cliente.cs" />
     <Compile Include="Classes\ColeccionDiscos.cs" />
     <Compile Include="Classes\DVD.cs" />
+    <Compile Include="Classes\Validacion.cs" />
     <Compile Include="FormDVD.cs" />
     <Compile Include="FormDVD.Designer.cs">
       <DependentUpon>FormDVD.cs</DependentUpon>
