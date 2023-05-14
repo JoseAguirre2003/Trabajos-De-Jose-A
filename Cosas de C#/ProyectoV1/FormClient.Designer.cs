@@ -298,6 +298,7 @@ namespace ProyectoV1
 			this.Text = "FormClient";
 			this.ResumeLayout(false);
 			this.PerformLayout();
+
 		}
 		private System.Windows.Forms.Button btnReiniciar;
 		private System.Windows.Forms.Button btnBuscar;

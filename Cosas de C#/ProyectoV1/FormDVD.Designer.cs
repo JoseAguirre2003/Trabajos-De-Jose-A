@@ -61,6 +61,7 @@ namespace ProyectoV1
 		/// </summary>
 		private void InitializeComponent()
 		{
+			this.components = new System.ComponentModel.Container();
 			this.lbGedtionDVD = new System.Windows.Forms.Label();
 			this.lblCodigo = new System.Windows.Forms.Label();
 			this.txtCode = new System.Windows.Forms.TextBox();
@@ -87,9 +88,25 @@ namespace ProyectoV1
 			this.txtRuta = new System.Windows.Forms.TextBox();
 			this.btnCerrar = new System.Windows.Forms.Button();
 			this.btnReiniciar = new System.Windows.Forms.Button();
+			this.errorProviderCode = new System.Windows.Forms.ErrorProvider(this.components);
+			this.errorProviderTitulo = new System.Windows.Forms.ErrorProvider(this.components);
+			this.errorProviderFechaF = new System.Windows.Forms.ErrorProvider(this.components);
+			this.errorProviderRadioBt = new System.Windows.Forms.ErrorProvider(this.components);
+			this.errorProviderDescrip = new System.Windows.Forms.ErrorProvider(this.components);
+			this.errorProviderCantidad = new System.Windows.Forms.ErrorProvider(this.components);
+			this.errorProviderFechaI = new System.Windows.Forms.ErrorProvider(this.components);
+			this.errorProviderRuta = new System.Windows.Forms.ErrorProvider(this.components);
 			this.grupBoxTypeDVD.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.numericUpCantidad)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.errorProviderCode)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.errorProviderTitulo)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.errorProviderFechaF)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.errorProviderRadioBt)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.errorProviderDescrip)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.errorProviderCantidad)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.errorProviderFechaI)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.errorProviderRuta)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// lbGedtionDVD
@@ -194,7 +211,7 @@ namespace ProyectoV1
 			// 
 			this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
 			this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.pictureBox1.Location = new System.Drawing.Point(293, 79);
+			this.pictureBox1.Location = new System.Drawing.Point(299, 70);
 			this.pictureBox1.Name = "pictureBox1";
 			this.pictureBox1.Size = new System.Drawing.Size(150, 150);
 			this.pictureBox1.TabIndex = 11;
@@ -212,10 +229,10 @@ namespace ProyectoV1
 			// 
 			this.numericUpCantidad.Location = new System.Drawing.Point(86, 358);
 			this.numericUpCantidad.Maximum = new decimal(new int[] {
-									1000,
-									0,
-									0,
-									0});
+			1000,
+			0,
+			0,
+			0});
 			this.numericUpCantidad.Name = "numericUpCantidad";
 			this.numericUpCantidad.Size = new System.Drawing.Size(181, 20);
 			this.numericUpCantidad.TabIndex = 14;
@@ -235,6 +252,7 @@ namespace ProyectoV1
 			this.datePickerFabric.Name = "datePickerFabric";
 			this.datePickerFabric.Size = new System.Drawing.Size(181, 20);
 			this.datePickerFabric.TabIndex = 7;
+			this.datePickerFabric.Value = new System.DateTime(2023, 5, 14, 0, 0, 0, 0);
 			// 
 			// datePickerIngres
 			// 
@@ -254,7 +272,7 @@ namespace ProyectoV1
 			// 
 			// btnBuscar
 			// 
-			this.btnBuscar.Location = new System.Drawing.Point(293, 44);
+			this.btnBuscar.Location = new System.Drawing.Point(299, 44);
 			this.btnBuscar.Name = "btnBuscar";
 			this.btnBuscar.Size = new System.Drawing.Size(75, 23);
 			this.btnBuscar.TabIndex = 17;
@@ -263,7 +281,7 @@ namespace ProyectoV1
 			// 
 			// btnActualizar
 			// 
-			this.btnActualizar.Location = new System.Drawing.Point(293, 321);
+			this.btnActualizar.Location = new System.Drawing.Point(299, 285);
 			this.btnActualizar.Name = "btnActualizar";
 			this.btnActualizar.Size = new System.Drawing.Size(75, 23);
 			this.btnActualizar.TabIndex = 18;
@@ -272,7 +290,7 @@ namespace ProyectoV1
 			// 
 			// btnEliminar
 			// 
-			this.btnEliminar.Location = new System.Drawing.Point(293, 350);
+			this.btnEliminar.Location = new System.Drawing.Point(299, 314);
 			this.btnEliminar.Name = "btnEliminar";
 			this.btnEliminar.Size = new System.Drawing.Size(75, 23);
 			this.btnEliminar.TabIndex = 19;
@@ -281,7 +299,7 @@ namespace ProyectoV1
 			// 
 			// btnRegist
 			// 
-			this.btnRegist.Location = new System.Drawing.Point(293, 379);
+			this.btnRegist.Location = new System.Drawing.Point(299, 343);
 			this.btnRegist.Name = "btnRegist";
 			this.btnRegist.Size = new System.Drawing.Size(75, 23);
 			this.btnRegist.TabIndex = 20;
@@ -290,7 +308,7 @@ namespace ProyectoV1
 			// 
 			// btnBuscarImg
 			// 
-			this.btnBuscarImg.Location = new System.Drawing.Point(293, 235);
+			this.btnBuscarImg.Location = new System.Drawing.Point(299, 227);
 			this.btnBuscarImg.Name = "btnBuscarImg";
 			this.btnBuscarImg.Size = new System.Drawing.Size(95, 23);
 			this.btnBuscarImg.TabIndex = 21;
@@ -299,14 +317,14 @@ namespace ProyectoV1
 			// 
 			// txtRuta
 			// 
-			this.txtRuta.Location = new System.Drawing.Point(293, 264);
+			this.txtRuta.Location = new System.Drawing.Point(299, 253);
 			this.txtRuta.Name = "txtRuta";
 			this.txtRuta.Size = new System.Drawing.Size(150, 20);
 			this.txtRuta.TabIndex = 22;
 			// 
 			// btnCerrar
 			// 
-			this.btnCerrar.Location = new System.Drawing.Point(378, 414);
+			this.btnCerrar.Location = new System.Drawing.Point(393, 414);
 			this.btnCerrar.Name = "btnCerrar";
 			this.btnCerrar.Size = new System.Drawing.Size(75, 23);
 			this.btnCerrar.TabIndex = 23;
@@ -322,13 +340,45 @@ namespace ProyectoV1
 			this.btnReiniciar.Text = "Reiniciar";
 			this.btnReiniciar.UseVisualStyleBackColor = true;
 			// 
+			// errorProviderCode
+			// 
+			this.errorProviderCode.ContainerControl = this;
+			// 
+			// errorProviderTitulo
+			// 
+			this.errorProviderTitulo.ContainerControl = this;
+			// 
+			// errorProviderFechaF
+			// 
+			this.errorProviderFechaF.ContainerControl = this;
+			// 
+			// errorProviderRadioBt
+			// 
+			this.errorProviderRadioBt.ContainerControl = this;
+			// 
+			// errorProviderDescrip
+			// 
+			this.errorProviderDescrip.ContainerControl = this;
+			// 
+			// errorProviderCantidad
+			// 
+			this.errorProviderCantidad.ContainerControl = this;
+			// 
+			// errorProviderFechaI
+			// 
+			this.errorProviderFechaI.ContainerControl = this;
+			// 
+			// errorProviderRuta
+			// 
+			this.errorProviderRuta.ContainerControl = this;
+			// 
 			// FormDVD
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.SystemColors.Control;
 			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-			this.ClientSize = new System.Drawing.Size(465, 449);
+			this.ClientSize = new System.Drawing.Size(480, 449);
 			this.ControlBox = false;
 			this.Controls.Add(this.btnReiniciar);
 			this.Controls.Add(this.btnCerrar);
@@ -353,16 +403,32 @@ namespace ProyectoV1
 			this.Controls.Add(this.txtCode);
 			this.Controls.Add(this.lblCodigo);
 			this.Controls.Add(this.lbGedtionDVD);
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
 			this.MaximizeBox = false;
 			this.Name = "FormDVD";
 			this.Text = "Modulo de control de DVD";
 			this.grupBoxTypeDVD.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.numericUpCantidad)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.errorProviderCode)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.errorProviderTitulo)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.errorProviderFechaF)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.errorProviderRadioBt)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.errorProviderDescrip)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.errorProviderCantidad)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.errorProviderFechaI)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.errorProviderRuta)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
+
 		}
 		private System.Windows.Forms.Button btnReiniciar;
+		private System.Windows.Forms.ErrorProvider errorProviderCode;
+		private System.Windows.Forms.ErrorProvider errorProviderTitulo;
+		private System.Windows.Forms.ErrorProvider errorProviderFechaF;
+		private System.Windows.Forms.ErrorProvider errorProviderRadioBt;
+		private System.Windows.Forms.ErrorProvider errorProviderDescrip;
+		private System.Windows.Forms.ErrorProvider errorProviderCantidad;
+		private System.Windows.Forms.ErrorProvider errorProviderFechaI;
+		private System.Windows.Forms.ErrorProvider errorProviderRuta;
 	}
 }

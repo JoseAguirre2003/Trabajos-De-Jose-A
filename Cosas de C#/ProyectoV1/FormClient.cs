@@ -14,11 +14,15 @@ namespace ProyectoV1
 			InitializeComponent();
 			btnRegist.Click += new EventHandler(btnRegistrarClick);
 			btnBuscar.Click += new EventHandler(btnBuscarClick);
+			btnActualizar.Click += new EventHandler(btnActualizarClick);
+			btnEliminar.Click += new EventHandler(btnEliminarClick);
 			btnReiniciar.Click += new EventHandler(btnLimpiarClick);
+			btnCerrar.Click += new EventHandler(btnCerrarClick);
 			coleccionClient = col; 
 		}
 		
 		public void btnRegistrarClick(object sender, EventArgs e){
+			//Falta validar!!
 			if(true){
 				String cedula = txtCedula.Text;
 				String nombre = txtNombre.Text;
@@ -50,19 +54,44 @@ namespace ProyectoV1
 				txtTelefono.Text = client.NumeroCasa;
 				dateTimeRegistro.Value = client.FechaRegist;
 			}else
-				MessageBox.Show("No se encontro :(");
+				MessageBox.Show("No se encontro el cliente :(");
 		}
 		
 		public void btnActualizarClick(object sender, EventArgs e){
-			
+			//
+			if(true){
+				String cedula = txtCedula.Text;
+				String nombre = txtNombre.Text;
+				String apellido = txtApellido.Text;
+				DateTime fechaNacim = datePickerNacimiento.Value;
+				String direccion = txtDireccion.Text;
+				String correo = txtCorreo.Text;
+				String numeroMovil = txtMovil.Text;
+				String numeroCasa = txtTelefono.Text;
+				DateTime fechaRegist = dateTimeRegistro.Value;
+				coleccionClient.Actualizar(cedula, nombre, apellido, fechaNacim, direccion, correo, numeroMovil, numeroCasa, fechaRegist);
+				MessageBox.Show("Actualizado con exito! :)");
+				limpiar();
+			}
+				
 		}
 		
 		public void btnEliminarClick(object sender, EventArgs e){
-		
+			String cedula = txtCedula.Text;
+			if(coleccionClient.Eliminar(cedula)){
+				MessageBox.Show("Eliminado!");
+				limpiar();
+			}else
+				MessageBox.Show("No se pudo encontrar para su eliminacion");
+			
 		}
 		
 		public void btnLimpiarClick(object sender, EventArgs e){
 			limpiar();
+		}
+		
+		public void btnCerrarClick(object sender, EventArgs e){
+			Dispose();
 		}
 		
 		public void limpiar(){
@@ -75,6 +104,19 @@ namespace ProyectoV1
 			txtMovil.Text = "";
 			txtTelefono.Text = "";
 			dateTimeRegistro.Value = DateTime.Now;
+		}
+		
+		public bool validar(){
+			bool valido = true;
+			
+			if(Validacion.validarTxtVacio(txtCedula.Text))
+				valido = false;
+			else if(Validacion.validarTxtVacio(txtNombre.Text))
+				valido = false;
+			else if(Validacion.validarTxtVacio(txtApellido.Text))
+				valido = false;				
+			
+			return valido;
 		}
 	}
 }

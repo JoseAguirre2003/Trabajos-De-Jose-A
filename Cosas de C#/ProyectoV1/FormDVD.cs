@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
+using System.IO;
 using ProyectoV1.Classes;
 
 namespace ProyectoV1
@@ -24,7 +25,7 @@ namespace ProyectoV1
 		
 		public void btnRegistrarClick(object sender, EventArgs e){
 			//Falta validar!!
-			if(true){
+			if(validar()){
 				String code = txtCode.Text;
 				String title = txtTitle.Text;
 				DateTime fabricDate = datePickerFabric.Value;
@@ -45,6 +46,8 @@ namespace ProyectoV1
 				colecDVD.Agregar(code, title, fabricDate, type, descrip, cant, ingresDate, imgRuta);
 				MessageBox.Show("Guardado con exito!");
 				limpiar();
+			}else{
+				MessageBox.Show("Datos errados :(");
 			}
 		}
 		
@@ -108,9 +111,9 @@ namespace ProyectoV1
 			if(colecDVD.Eliminar(code)){
 				MessageBox.Show("Eliminado!");
 				limpiar();
-			}else{
+			}else
 				MessageBox.Show("No se pudo encontrar para su eliminacion");
-			}
+			
 		}
 		
 		//Falta validar!!
@@ -145,15 +148,71 @@ namespace ProyectoV1
 			limpiar();
 		}
 		
-		public bool validar(){
-			
+		public bool validar(){	
 			bool valido = true;
 			
-			if(Validacion.validarTxtVacio(txtCode.Text))
+			//Validar Codigo
+			if(!Validacion.validarTxtVacio(txtCode.Text)){
 				valido = false;
-			else if(Validacion.validarTxtVacio(txtTitle.Text))
-				valido = false;	
+				errorProviderCode.SetError(txtCode, "ERROR! El campo esta vacio");
+			}else if(colecDVD.Buscar(txtCode.Text) > -1){
+				valido = false;
+				errorProviderCode.SetError(txtCode, "ERROR! El codigo ya esta en uso!");
+			}else
+				errorProviderCode.Clear();
 			
+			//Validar Titulo
+			if(!Validacion.validarTxtVacio(txtTitle.Text)){
+				valido = false;
+				errorProviderTitulo.SetError(txtTitle, "ERROR! El campo esta vacio");
+			}else if(colecDVD.Buscar(txtTitle.Text) > -1){
+				valido = false;
+				errorProviderTitulo.SetError(txtTitle, "ERROR! El titulo ya esta en uso!");
+			}else
+				errorProviderTitulo.Clear();
+			
+			//Validar Fecha de Fabricacion
+			if(!Validacion.validarFechaFutura(datePickerFabric.Value)){
+				valido = false;
+				errorProviderFechaF.SetError(datePickerFabric, "ERROR! La fecha es futura!");
+			}else
+				errorProviderFechaF.Clear();
+			
+			//Validar Radio Buttons
+			if(!radioButton1.Checked && !radioButton2.Checked && !radioButton3.Checked){
+				valido = false;
+				errorProviderRadioBt.SetError(grupBoxTypeDVD, "ERROR! No se ha seleccionado el tipo de contenido de DVD");
+			}else
+				errorProviderRadioBt.Clear();
+			
+			//Validar Descripcion
+			if(!Validacion.validarTxtVacio(richTxtDescrip.Text)){
+				valido = false;
+				errorProviderDescrip.SetError(richTxtDescrip, "ERROR! El campo esta vacio");
+			}else
+				errorProviderDescrip.Clear();
+			
+			//Validar Cantidad
+			if(numericUpCantidad.Value < 1){
+				valido = false;
+				errorProviderCantidad.SetError(numericUpCantidad, "Error! Cantidad no debe ser 0 o inferior");
+			}else
+				errorProviderCantidad.Clear();
+			
+			//Validar Fecha de Ingreso
+			if(!Validacion.validarFechaFutura(datePickerIngres.Value)){
+				valido = false;
+				errorProviderFechaI.SetError(datePickerIngres, "ERROR! La fecha es futura!");
+			}else
+				errorProviderFechaI.Clear();
+			
+			//Validar Imagen
+			if(!File.Exists(txtRuta.Text)){
+				valido = false;
+				errorProviderRuta.SetError(txtRuta, "ERROR! La Ruta no existe");
+			}else
+				errorProviderRuta.Clear();
+				
 			return valido;
 		}
 	}

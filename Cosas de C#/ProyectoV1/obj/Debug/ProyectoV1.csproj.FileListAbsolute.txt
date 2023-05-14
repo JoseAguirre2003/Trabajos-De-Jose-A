@@ -17,3 +17,4 @@ C:\Users\netwo\Downloads\Trabajos-De-Jose-A-master\Trabajos-De-Jose-A-master\Cos
 C:\Users\netwo\Downloads\Trabajos-De-Jose-A-master\Trabajos-De-Jose-A-master\Cosas de C#\ProyectoV1\bin\Debug\ProyectoV1.pdb
 C:\Users\netwo\Downloads\Trabajos-De-Jose-A-master\Trabajos-De-Jose-A-master\Cosas de C#\ProyectoV1\obj\Debug\ProyectoV1.pdb
 C:\Users\netwo\Downloads\Trabajos-De-Jose-A-master\Trabajos-De-Jose-A-master\Cosas de C#\ProyectoV1\obj\Debug\ProyectoV1.FormClient.resources
+C:\Users\Vladi1000\Desktop\Tareas\Semestre II\Programacion I\ProyectoV1\obj\Debug\ProyectoV1.FormClient.resources
