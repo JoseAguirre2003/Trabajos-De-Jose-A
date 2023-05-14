@@ -86,6 +86,7 @@ namespace ProyectoV1
 			this.btnBuscarImg = new System.Windows.Forms.Button();
 			this.txtRuta = new System.Windows.Forms.TextBox();
 			this.btnCerrar = new System.Windows.Forms.Button();
+			this.btnReiniciar = new System.Windows.Forms.Button();
 			this.grupBoxTypeDVD.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.numericUpCantidad)).BeginInit();
@@ -211,10 +212,10 @@ namespace ProyectoV1
 			// 
 			this.numericUpCantidad.Location = new System.Drawing.Point(86, 358);
 			this.numericUpCantidad.Maximum = new decimal(new int[] {
-			1000,
-			0,
-			0,
-			0});
+									1000,
+									0,
+									0,
+									0});
 			this.numericUpCantidad.Name = "numericUpCantidad";
 			this.numericUpCantidad.Size = new System.Drawing.Size(181, 20);
 			this.numericUpCantidad.TabIndex = 14;
@@ -305,20 +306,31 @@ namespace ProyectoV1
 			// 
 			// btnCerrar
 			// 
-			this.btnCerrar.Location = new System.Drawing.Point(378, 9);
+			this.btnCerrar.Location = new System.Drawing.Point(378, 414);
 			this.btnCerrar.Name = "btnCerrar";
 			this.btnCerrar.Size = new System.Drawing.Size(75, 23);
 			this.btnCerrar.TabIndex = 23;
 			this.btnCerrar.Text = "Cerrar";
 			this.btnCerrar.UseVisualStyleBackColor = true;
 			// 
+			// btnReiniciar
+			// 
+			this.btnReiniciar.Location = new System.Drawing.Point(22, 414);
+			this.btnReiniciar.Name = "btnReiniciar";
+			this.btnReiniciar.Size = new System.Drawing.Size(75, 23);
+			this.btnReiniciar.TabIndex = 24;
+			this.btnReiniciar.Text = "Reiniciar";
+			this.btnReiniciar.UseVisualStyleBackColor = true;
+			// 
 			// FormDVD
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.BackColor = System.Drawing.SystemColors.Control;
 			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-			this.ClientSize = new System.Drawing.Size(465, 421);
+			this.ClientSize = new System.Drawing.Size(465, 449);
 			this.ControlBox = false;
+			this.Controls.Add(this.btnReiniciar);
 			this.Controls.Add(this.btnCerrar);
 			this.Controls.Add(this.txtRuta);
 			this.Controls.Add(this.btnBuscarImg);
@@ -341,6 +353,8 @@ namespace ProyectoV1
 			this.Controls.Add(this.txtCode);
 			this.Controls.Add(this.lblCodigo);
 			this.Controls.Add(this.lbGedtionDVD);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+			this.MaximizeBox = false;
 			this.Name = "FormDVD";
 			this.Text = "Modulo de control de DVD";
 			this.grupBoxTypeDVD.ResumeLayout(false);
@@ -348,7 +362,7 @@ namespace ProyectoV1
 			((System.ComponentModel.ISupportInitialize)(this.numericUpCantidad)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
-
 		}
+		private System.Windows.Forms.Button btnReiniciar;
 	}
 }

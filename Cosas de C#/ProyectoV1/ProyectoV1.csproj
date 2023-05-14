@@ -52,9 +52,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Cliente.cs" />
+    <Compile Include="Classes\ColeccionClientes.cs" />
     <Compile Include="Classes\ColeccionDiscos.cs" />
     <Compile Include="Classes\DVD.cs" />
     <Compile Include="Classes\Validacion.cs" />
+    <Compile Include="FormClient.cs" />
+    <Compile Include="FormClient.Designer.cs">
+      <DependentUpon>FormClient.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormDVD.cs" />
     <Compile Include="FormDVD.Designer.cs">
       <DependentUpon>FormDVD.cs</DependentUpon>
@@ -73,6 +78,9 @@
     <Folder Include="Classes" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FormClient.resx">
+      <DependentUpon>FormClient.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormDVD.resx">
       <DependentUpon>FormDVD.cs</DependentUpon>
     </EmbeddedResource>

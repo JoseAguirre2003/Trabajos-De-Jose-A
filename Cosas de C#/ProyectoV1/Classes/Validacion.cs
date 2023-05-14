@@ -11,8 +11,10 @@ namespace ProyectoV1.Classes
 			return true;
 		}
 		
-		static public bool validarNum(){
-			
+		static public bool validarNum(decimal num, decimal numMin, decimal numMax){
+			if (num < numMin || num > numMax)
+				return false;
+			return true;
 		}
 		
 		static public bool validarFechaFutura(DateTime fecha){
@@ -27,7 +29,7 @@ namespace ProyectoV1.Classes
 			return true;
 		}
 		
-		static public bool validarFechaRango(DateTime fechaMin, DateTime fechaMax){
+		static public bool validarFechaRango(DateTime fecha, DateTime fechaMin, DateTime fechaMax){
 			if(fecha < fechaMin || fecha > fechaMax)
 				return false;
 			return true;

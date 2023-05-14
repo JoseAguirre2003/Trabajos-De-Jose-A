@@ -15,7 +15,7 @@ namespace ProyectoV1
 		/// </summary>
 		private System.ComponentModel.IContainer components = null;
 		private System.Windows.Forms.MenuStrip menuStrip1;
-		private System.Windows.Forms.ToolStripMenuItem btnGestionDVD;
+		private System.Windows.Forms.ToolStripMenuItem MenuModulos;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -39,25 +39,42 @@ namespace ProyectoV1
 		private void InitializeComponent()
 		{
 			this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+			this.MenuModulos = new System.Windows.Forms.ToolStripMenuItem();
 			this.btnGestionDVD = new System.Windows.Forms.ToolStripMenuItem();
+			this.btnModuloClientes = new System.Windows.Forms.ToolStripMenuItem();
 			this.menuStrip1.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// menuStrip1
 			// 
 			this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-			this.btnGestionDVD});
+									this.MenuModulos});
 			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
 			this.menuStrip1.Name = "menuStrip1";
 			this.menuStrip1.Size = new System.Drawing.Size(502, 24);
 			this.menuStrip1.TabIndex = 0;
 			this.menuStrip1.Text = "menuStrip1";
 			// 
+			// MenuModulos
+			// 
+			this.MenuModulos.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+									this.btnGestionDVD,
+									this.btnModuloClientes});
+			this.MenuModulos.Name = "MenuModulos";
+			this.MenuModulos.Size = new System.Drawing.Size(50, 20);
+			this.MenuModulos.Text = "Menú";
+			// 
 			// btnGestionDVD
 			// 
 			this.btnGestionDVD.Name = "btnGestionDVD";
-			this.btnGestionDVD.Size = new System.Drawing.Size(101, 20);
+			this.btnGestionDVD.Size = new System.Drawing.Size(159, 22);
 			this.btnGestionDVD.Text = "Gestion de DVD";
+			// 
+			// btnModuloClientes
+			// 
+			this.btnModuloClientes.Name = "btnModuloClientes";
+			this.btnModuloClientes.Size = new System.Drawing.Size(159, 22);
+			this.btnModuloClientes.Text = "Gestion Clientes";
 			// 
 			// MainForm
 			// 
@@ -73,7 +90,8 @@ namespace ProyectoV1
 			this.menuStrip1.PerformLayout();
 			this.ResumeLayout(false);
 			this.PerformLayout();
-
 		}
+		private System.Windows.Forms.ToolStripMenuItem btnGestionDVD;
+		private System.Windows.Forms.ToolStripMenuItem btnModuloClientes;
 	}
 }

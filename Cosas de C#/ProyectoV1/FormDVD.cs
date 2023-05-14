@@ -15,12 +15,15 @@ namespace ProyectoV1
 			btnRegist.Click += new EventHandler(btnRegistrarClick);
 			btnBuscar.Click += new EventHandler(btnBuscarClick);
 			btnBuscarImg.Click += new EventHandler(btnBuscarImgClick);
+			btnActualizar.Click += new EventHandler(btnActualizarClick);
 			btnEliminar.Click += new EventHandler(btnEliminarClick);
+			btnReiniciar.Click += new EventHandler(btnReiniciarClick);
 			colecDVD = col;
 			pictureBox1.BackgroundImage = Image.FromFile(@"img\dvdLabel.png");
 		}
 		
 		public void btnRegistrarClick(object sender, EventArgs e){
+			//Falta validar!!
 			if(true){
 				String code = txtCode.Text;
 				String title = txtTitle.Text;
@@ -45,6 +48,7 @@ namespace ProyectoV1
 			}
 		}
 		
+		//Falta validar!!
 		public void btnBuscarClick(object sender, EventArgs e){
 			Int16 pos = colecDVD.Buscar(txtCode.Text);
 			DVD dvdInUse;
@@ -74,9 +78,31 @@ namespace ProyectoV1
 		}
 		
 		public void btnActualizarClick(object sender, EventArgs e){
-			
+			if(true){
+				String code = txtCode.Text;
+				String title = txtTitle.Text;
+				DateTime fabricDate = datePickerFabric.Value;
+				String type = string.Empty;
+				
+				if(radioButton1.Checked)
+					type = "BluRay";
+				else if(radioButton2.Checked)
+					type = "Juego";
+				else if(radioButton3.Checked)
+					type = "Album";
+				
+				String descrip = richTxtDescrip.Text;
+				Int16 cant = (Int16)numericUpCantidad.Value;
+				DateTime ingresDate = datePickerIngres.Value;
+				string imgRuta = txtRuta.Text;
+				
+				colecDVD.Actualizar(code, title, fabricDate, type, descrip, cant, ingresDate, imgRuta);
+				MessageBox.Show("Actualizado con EXITO! :)");
+				limpiar();
+			}
 		}
 		
+		//Falta validar!!
 		public void btnEliminarClick(object sender, EventArgs e){
 			String code = txtCode.Text;
 			if(colecDVD.Eliminar(code)){
@@ -87,6 +113,7 @@ namespace ProyectoV1
 			}
 		}
 		
+		//Falta validar!!
 		public void btnBuscarImgClick(object sender, EventArgs e){
 			OpenFileDialog openFile = new OpenFileDialog();
 			openFile.Filter = "Img Files (*.bmp;*.jpg;*.jpeg;*.gif;*.png)|*.bmp;*.jpg;*.jpeg;*.gif;*.png";
@@ -114,6 +141,10 @@ namespace ProyectoV1
 			pictureBox1.BackgroundImage = Image.FromFile(@"img\dvdLabel.png");
 		}
 		
+		public void btnReiniciarClick(object sender, EventArgs e){
+			limpiar();
+		}
+		
 		public bool validar(){
 			
 			bool valido = true;
@@ -121,9 +152,7 @@ namespace ProyectoV1
 			if(Validacion.validarTxtVacio(txtCode.Text))
 				valido = false;
 			else if(Validacion.validarTxtVacio(txtTitle.Text))
-				valido = false;
-			else if(datePickerFabric.Value > DateTime.Now)
-				
+				valido = false;	
 			
 			return valido;
 		}

@@ -43,7 +43,7 @@ namespace ProyectoV1.Classes
 			return posicion;
 		}
 		
-		public bool Actualizar(String code, String title, DateTime fabricDate, String type, String descrip, Int16 cantidad, DateTime ingresDate, string imgRuta){
+		public void Actualizar(String code, String title, DateTime fabricDate, String type, String descrip, Int16 cantidad, DateTime ingresDate, string imgRuta){
 			Int16 posicion = Buscar(code);
 			if(posicion > -1){
 				coleccionDVD[posicion]._title = title;
@@ -53,9 +53,7 @@ namespace ProyectoV1.Classes
 				coleccionDVD[posicion]._cantidad = cantidad;
 				coleccionDVD[posicion]._ingresDate = ingresDate;
 				coleccionDVD[posicion]._imgRuta = imgRuta;
-				return true;
 			}
-			return false;
 		}
 		
 		public bool Eliminar(string code){
