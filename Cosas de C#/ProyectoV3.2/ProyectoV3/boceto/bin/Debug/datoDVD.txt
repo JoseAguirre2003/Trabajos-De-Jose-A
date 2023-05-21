@@ -1,0 +1,3 @@
+1234;Super Mario Bros The Movie;01/05/2023 01:12:43 a.m.;BluRay;La Pelicula de Mario Bros;5;21/05/2023 01:12:43 a.m.;C:\Users\Vladi1000\Desktop\Tareas\Semestre II\Programacion I\ProyectoV2\boceto\bin\Debug\New folder\SuperMarioMovie.jpg
+5678;Nirvana - In Utero;07/09/1993 01:13:49 a.m.;Album;Tercer Album de Estudio de Nirvana;10;01/02/2023 01:13:49 a.m.;C:\Users\Vladi1000\Desktop\Tareas\Semestre II\Programacion I\ProyectoV2\boceto\bin\Debug\New folder\InUteroNirvanaAlbumCover.jpg
+9012;GTA San Andreas;15/06/2004 01:15:01 a.m.;Juego;GTA San Andreas para Play 2;7;09/03/2022 01:15:01 a.m.;C:\Users\Vladi1000\Desktop\Tareas\Semestre II\Programacion I\ProyectoV2\boceto\bin\Debug\New folder\GTASanAndreasPS2.jpg
