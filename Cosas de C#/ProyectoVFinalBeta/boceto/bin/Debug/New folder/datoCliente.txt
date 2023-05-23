@@ -1,0 +1,4 @@
+1;Jose;Aguirre;2003-05-07T23:31:56;Cabudare;josealfredo02@gmail.com;0251;0412;2023-05-01T23:31:56
+2;Elianna;Suarez;2004-02-04T23:32:53;Quibor;eli@gmail.com;0251;0412;2020-01-28T23:31:56
+3;Angel;Piña;2004-09-14T23:33:35;Barquisimeto;angel@gmail.com;0251;0414;2021-07-07T23:31:56
+4;Deismar;Duran;1994-09-11T23:33:35;Barquisimeto;deismar@gmail.com;0251;0412;2021-07-08T23:31:56

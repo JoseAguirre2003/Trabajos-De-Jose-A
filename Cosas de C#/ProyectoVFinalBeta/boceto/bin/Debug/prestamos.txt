@@ -1,0 +1,8 @@
+Prestamo;1;1;jo;ag;2005-05-23T04:06:08;aaaaaa;correo@gmail.com;3;2;2023-05-23T04:06:08;2023-05-20T00:00:00;6
+Articulo;123;Mario;BluRay;3;2023-05-23T00:00:00;2
+Articulo;789;GTA SA;Juego;4;2023-05-24T00:00:00;2
+Articulo;456;In utero;Album;7;2023-05-27T00:00:00;2
+Prestamo;2;2;de;ma;2005-05-23T04:06:08;bbbbb;correo@gmail.com;3;2;2023-05-23T04:06:08;2023-05-20T00:00:00;6
+Articulo;123;Mario;BluRay;9;2023-05-29T00:00:00;6
+Prestamo;3;3;awewe;wewe;2005-05-23T04:08:00;wewew;correo@gmail.com;111;222;2023-05-23T04:06:08;2023-05-10T00:00:00;5
+Articulo;789;GTA SA;Juego;10;2023-05-20T00:00:00;5

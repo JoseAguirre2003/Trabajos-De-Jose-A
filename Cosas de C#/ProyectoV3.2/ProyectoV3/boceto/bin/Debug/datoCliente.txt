@@ -1,4 +1,0 @@
-123;Jose;Aguirre;07/05/2003 01:15:50 a.m.;Cabudare;jose@gmail.com;0412;0251;01/02/2023 01:15:50 a.m.
-456;Deismar;Duran;11/09/1994 01:18:42 a.m.;Santa Rosa;deismar@gmail.com;0424;0251;17/08/2022 01:18:42 a.m.
-789;Angel;Piña;16/06/2004 01:19:38 a.m.;Barquisimeto;angel@gmail.com;0412;0251;28/01/2020 01:19:38 a.m.
-012;Elianna;Suarez;18/02/2004 01:20:39 a.m.;Quibor;elianna@gmail.com;0414;0251;14/07/2021 01:20:39 a.m.
